@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar-left .left-text p{
+    max-width: 20vw;
+}
+
+.navbar-left .left-text a{
+    max-width: 20vw;
+}
+
+.navbar-left .left-text span{
+    max-width: 20vw;
+}
+
+
+.navbar-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.navbar-right ul{
+    align-self: flex-end;
+    list-style-type: none;
+}
+
+.navbar-right ul li{
+    padding: 0.5px;
+}
+
+.navbar-right ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black
+}
+
+.navbar-right ul li a:hover{
+    text-decoration: underline;
+    color: black
+}
+
+.a-logo {
+    text-decoration: none;
+    align-self: center;
+}
+
+.a-logo img {
+    width: 70%;
+}
+
+.a-email {
+    text-decoration: none;
+    align-self: center;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.a-email:hover {
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+	scroll-snap-type: mandatory;
+	scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+body {
+    /* background-color: blueviolet; */
+    height: 700vh;
+    transition: background 1s ease;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }  
+
+section {
+    scroll-behavior: smooth;
+	height: 100vh;
+    /* This makes the scroll goes down */
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1	{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	width: 100%;
+	left: 0;
+	font-size: calc(1rem + 3vw);
+}
+
+section img{
+    max-width: 60vw;
+    max-height: 60vh;
+}
+
+section p {
+    font-family: 'Roboto', sans-serif;
+    color: #251d20;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: -10px;
+}
+
+.section6 p a {
+    color: pink;
+}
+
+section p a {
+    color: white;
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .navbar-right ul{
+        margin-left: 300px;
+    }
+    .navbar-right ul li a{
+        font-size: 12px;
+    }
+
+    .a-logo img {
+        width: 50vw;
+    }
+    
+    .a-email {
+        display: none;
+    }
+    
+    .navbar-right ul{
+        display: none;
+        
+    }
+    
+    .navbar-left .left-text p{
+        display: none;
+    }
+    .navbar-left .left-text a{
+        display: none;
+    }
+    .navbar-left .left-text span{
+        display: none;
+    }
+}
