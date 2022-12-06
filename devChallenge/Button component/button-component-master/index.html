@@ -6,12 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-    </style>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+            src: local('Material Icons'),
+              local('MaterialIcons-Regular'),
+              url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+              url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+              url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+          }
     </style>
     <title>Buttons Page</title>
 </head>
@@ -55,10 +64,10 @@
                 <button>Default</button>
             </div>
         </div>
-        <div class="row3">
+            <div class="row3">
             <div class="row3-block1">
                 <span>
-                    < Button disabled />
+                    < Button variant="text" />
                 </span>
                 <button>Default</button>
             </div>
@@ -66,9 +75,14 @@
                 <span>&:hover, &:focus</span>
                 <button>Default</button>
             </div>
-
         </div>
         <div class="row4">
+            <div class="row4-block1">
+                <span>
+                    < Button disableShadow />
+                </span>
+                <button>Default</button>
+            </div>
 
         </div>
         <div class="row5">
@@ -79,23 +93,84 @@
                 <button>Disabled</button>
             </div>
             <div class="row5-block2">
-                <span>< Button variant=”text” disabled /></span>
+                <span>< Button variant="text" disabled /></span>
                 <button>Disabled</button>
             </div>
         </div>
         <div class="row6">
-
+            <div class="row6-block1">
+                <span>
+                    < Button startIcon="local_grocery_store" />
+                </span>
+                <button><img src="shopping_cart_white_24dp.svg">Default</button>
+            </div>
+            <div class="row6-block2">
+                <span>< Button endIcon="local_grocery_store" /></span>
+                <button>Default<img src="shopping_cart_white_24dp.svg"></button>
+            </div>
         </div>
         <div class="row7">
-
+            <div class="row7-block1">
+                <span>
+                    < Button size="sm" />
+                </span>
+                <button>Default</button>
+            </div>
+            <div class="row7-block2">
+                <span>< Button size="md" /></span>
+                <button>Default</button>
+            </div>
+            <div class="row7-block3">
+                <span>< Button size="lg" /></span>
+                <button>Default</button>
+            </div>
         </div>
         <div class="row8">
-
+            <div class="row8-block1">
+                <span>
+                    < Button color="default" />
+                </span>
+                <button>Default</button>
+            </div>
+            <div class="row8-block2">
+                <span>< Button color="primary" /></span>
+                <button>Default</button>
+            </div>
+            <div class="row8-block3">
+                <span>< Button color="secondary" /></span>
+                <button>Secondary</button>
+            </div>
+            <div class="row8-block4">
+                <span>< Button color="danger" /></span>
+                <button>Danger</button>
+            </div>
         </div>
         <div class="row9">
+            <div class="row9-block1">
+                <span>
+                    &:hover, &:focus
+                </span>
+                <button>Default</button>
+            </div>
+            <div class="row9-block2">
+                <span></span>
+                <button>Default</button>
+            </div>
+            <div class="row9-block3">
+                <span></span>
+                <button>Secondary</button>
+            </div>
+            <div class="row9-block4">
+                <span></span>
+                <button>Danger</button>
+            </div>
+        </div> 
 
-        </div>
     </div>
+    <!-- <div class="final-text"> -->
+        <span class="icons-text-span">Icons: https://material.io/resources/icons/?style=round</span>
+        <span class="created-by-text-span">created by username - devChallenges.io</span>
+    <!-- </div> -->
 </body>
 
 </html>
