@@ -4,12 +4,6 @@
 
 }
 
-body {
-    /* display: flex;
-    flex-direction: row; */
-    /* background-color: #333333; */
-}
-
 .right {
     height: 100vh;
 }
@@ -269,6 +263,20 @@ body {
     border-radius: 6px;
 }
 
+.right .row1-block2 button:hover {
+    background: #E0E0E0;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    border-radius: 6px;
+}
+
+.right .row1-block2 button:focus {
+    background: #3D5AFE;
+    border-radius: 6px;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    border-radius: 6px;
+    color: #FFFF;
+}
+    
 /* ROW 2 */
 .right .row2 {
     display: flex;
@@ -729,6 +737,10 @@ top: 639px;
 
 }
 
+.right .row6-block1 button::before {
+    content: "🛒 ";
+}
+
 .right .row6-block1 button img {
     left: 4.17%;
     right: 13.31%;
@@ -782,6 +794,10 @@ line-height: 20px;
 text-align: center;
 
 color: #FFFFFF;
+}
+
+.right .row6-block2 button::after {
+        content: " 🛒";
 }
 
 .right .row6-block2 button img { 
