@@ -20,20 +20,16 @@ export default function InputDiv(props) {
     
     useEffect(() => {
         //Load localStorage entries
-        const localStorageItems = { ...localStorage };
+        const localStorageItems = localStorage.getItem('entry');
+        const arrOfEntries = JSON.parse(localStorageItems);
 
-        const items = Object.keys(localStorageItems);
-
-        items.forEach(x=>{
-            var i = localStorage.getItem(x);
-            var iObj = JSON.parse(i);
-
-            var storedEntry = new Entry(iObj.value, iObj.sysid);
+        arrOfEntries.forEach(x=>{                        
+            var storedEntry = new Entry(x.value, x.sysid);
             
             setEntry(prevArray => [...prevArray, storedEntry]);
         })
-
-      }, []);
+        
+    }, []);
     
 
 const onChangeInput = (e) => {
@@ -44,49 +40,59 @@ const onChangeInput = (e) => {
 const onClickAddEntry = () => {
     var uniqueID = uuidv4();
     var newEntry = new Entry(entryText, uniqueID);
-    
-    //Save to localStorage
-    localStorage.setItem(uniqueID, JSON.stringify(newEntry));
+
     
     setEntry(prevArray => [...prevArray, newEntry]);
     setEntryText('');
+    //Save to localStorage
+    localStorage.setItem('entry', JSON.stringify(entry));
+    console.log('JSON.stringify(entry) :', JSON.stringify(entry));
+
 }
 
     const handleCompleteTodo = (sysid) => {
         //Update entry active flag
         var index = entry.findIndex(x => x.sysid === sysid);
         entry[index].active = false;
+        //Update localStorage
+        localStorage.setItem('entry', JSON.stringify(entry));
     }
     
     const handleNotCompleteTodo = (sysid) => {
         var index = entry.findIndex(x => x.sysid === sysid);
         entry[index].active = true;
+        //Update localStorage
+        localStorage.setItem('entry', JSON.stringify(entry));
     }
-
+    
     const onClickDeleteAllEntries = () => {
-        //Delete all entries from localStorage
-        localStorage.clear();
+        setEntry([]);
+        //Update localStorage
+        localStorage.setItem('entry', JSON.stringify([]));
+        
     }
-
+    
     const onClickDelete = (sysid) => {
-        // console.log(entry)
-        // localStorage.removeItem(sysid);
-        // const arrayWithoutRemoved = entry.filter(obj => obj.id !== sysid);
-        // console.log('arrayWithoutRemoved :', arrayWithoutRemoved);
-
+        const arrayWithoutRemoved = entry.filter(obj => obj.sysid !== sysid);
+        //Update localStorage
+        localStorage.setItem('entry', JSON.stringify(arrayWithoutRemoved));
+        setEntry(arrayWithoutRemoved)
     }
 
 
-  return ( (parentState === "all" || parentState === "active" || parentState === "") ?
+  return ( 
+    (parentState === "all" || parentState === "active" || parentState === "") ?
     <>
 <div className="input-div">
     <input type="text" id="input-text" onChange={onChangeInput} name="input-text" value={entryText} className="input-text" placeholder="add details" required></input>
     <button id="input-button" onClick={onClickAddEntry} className="input-button">Add</button>
 </div>
-    <TodoEntries setEntry={entry} state={parentState} handleCompleteTodo={handleCompleteTodo} handleNotCompleteTodo={handleNotCompleteTodo} deleteEntry={onClickDelete} deleteAll={onClickDeleteAllEntries}></TodoEntries>
+    <TodoEntries setEntry={entry} state={parentState} handleCompleteTodo={handleCompleteTodo} handleNotCompleteTodo={handleNotCompleteTodo} deleteOne={onClickDelete} deleteAll={onClickDeleteAllEntries}></TodoEntries>
     </>
     :
-    <TodoEntries setEntry={entry} state={parentState} handleCompleteTodo={handleCompleteTodo} handleNotCompleteTodo={handleNotCompleteTodo} deleteEntry={onClickDelete} deleteAll={onClickDeleteAllEntries}></TodoEntries>
+    <>
+    <TodoEntries setEntry={entry} state={parentState} handleCompleteTodo={handleCompleteTodo} handleNotCompleteTodo={handleNotCompleteTodo} deleteOne={onClickDelete} deleteAll={onClickDeleteAllEntries}></TodoEntries>
+    </>
   )
 }
 

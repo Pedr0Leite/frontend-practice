@@ -2,7 +2,6 @@ export default function TodoEntries(props) {
   
   const entryObj = props.setEntry;
   const state = props.state;
-  // console.log('state :', state);
 
   const completedLength = entryObj.filter(x => x.active === false).length;
 
@@ -16,14 +15,19 @@ export default function TodoEntries(props) {
     }
   }
 
-  const deleteEntry = (sysid) => {
+  function deleteEntry(e, sysid){
+    e.preventDefault();
     // window.localStorage.removeItem(sysid);
-    // props.deleteEntry(sysid);
+    props.deleteOne(sysid);
+    
   }
 
   // const deleteButton = document.getElementById('delete-button');
 
-  // deleteButton.addEventListener('click', deleteEntry);
+  // if(deleteButton != null){
+  //   deleteButton.addEventListener('click', deleteEntry);
+
+  // }
 
 
   return (
@@ -32,7 +36,8 @@ export default function TodoEntries(props) {
       <ul>
 {state === 'all' ? 
 
-(entryObj.map((ent) => (
+(entryObj
+  .map((ent) => (
   <li key={ent.sysid}>
 
   <div className="todo-entry-div">
@@ -42,9 +47,9 @@ export default function TodoEntries(props) {
   </div>
   </li>
 ))) :
-(entryObj.filter(entryWithState => 
-    entryWithState.active === (state === 'active' ? true : false)
-    ).map((ent) => (
+(entryObj
+  .filter(entryWithState => entryWithState.active === (state === 'active' ? true : false))
+  .map((ent) => (
     state === 'active' ? 
         (
           <li key={ent.sysid}>
@@ -61,7 +66,8 @@ export default function TodoEntries(props) {
           <div className="todo-entry-div">
           <label htmlFor={ent.sysid} className='checkbox-text-2' > {ent.value}</label>
           <br></br>
-          {state === 'completed' && <button id="delete-button" className="delete-button" onClick={deleteEntry(ent.sysid)}></button>}
+          {state === 'completed' && <button id="delete-button" className="delete-button" onClick={(e) => {deleteEntry(e,ent.sysid)}}>delete</button>}
+          {/* {state === 'completed' && <button id="delete-button" className="delete-button"></button>} */}
           </div>
           </li>
 
@@ -70,7 +76,7 @@ export default function TodoEntries(props) {
       }
     </ul>
       {(state === 'completed' && completedLength !== 0) &&
-      <button className='delete-all-button' onClick={props.deleteAll()}>Delete All</button>
+      <button className='delete-all-button' onClick={() => {props.deleteAll()}}>Delete All</button>
     }
     </form>
 </div>
