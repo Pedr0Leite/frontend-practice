@@ -1,14 +1,13 @@
 * {
     margin: 0;
     box-sizing: border-box;
-
-}
-
-.right {
+  }
+  
+  .right {
     height: 100vh;
-}
-
-.left {
+  }
+  
+  .left {
     background-color: #FAFBFD;
     /* text-align: center; */
     /* height: 100vh; */
@@ -17,147 +16,141 @@
     height: 1234px;
     left: -8.5px;
     top: -9.07px;
-}
-
-.left h3 {
+  }
+  
+  .left h3 {
     position: absolute;
     width: 114px;
     height: 20px;
     left: 48px;
     top: 38px;
-
+  
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 20px;
-}
-
-.left h3 span {
+  }
+  
+  .left h3 span {
     color: #F7542E;
-}
-
-.left ul {
+  }
+  
+  .left ul {
     list-style: none;
-}
-
-.left ul li:first-child {
+  }
+  
+  .left ul li:first-child {
     position: absolute;
     width: 62px;
     height: 20px;
     left: 48px;
     top: 180px;
-
+  
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-
+  
     color: #9E9E9E;
-}
-
-
-.left ul li:nth-child(2) {
+  }
+  
+  .left ul li:nth-child(2) {
     position: absolute;
     width: 80px;
     height: 20px;
     left: 48px;
     top: 225px;
-
+  
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-
+  
     color: #9E9E9E;
-
-}
-
-.left ul li:nth-child(3) {
+  }
+  
+  .left ul li:nth-child(3) {
     position: absolute;
     width: 47px;
     height: 20px;
     left: 48px;
     top: 277px;
-
+  
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-
+  
     color: #9E9E9E;
-
-}
-
-.left ul li:nth-child(4) {
+  }
+  
+  .left ul li:nth-child(4) {
     position: absolute;
     width: 53px;
     height: 20px;
     left: 48px;
     top: 327px;
-
+  
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-
+  
     color: #9E9E9E;
-
-}
-
-.left ul li:nth-child(5) {
+  }
+  
+  .left ul li:nth-child(5) {
     position: absolute;
     width: 45px;
     height: 20px;
     left: 48px;
     top: 375px;
-
+  
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-
+  
     color: #090F31;
-
-}
-
-.left ul li:nth-child(6) {
+  }
+  
+  .left ul li:nth-child(6) {
     position: absolute;
     width: 29px;
     height: 20px;
     left: 48px;
     top: 430px;
-
+  
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-
+  
     color: #9E9E9E;
-
-}
-
-/* RIGHT */
-
-.right {
+  }
+  
+  /* RIGHT */
+  
+  .right {
     display: flex;
     /* background-color: aqua; */
     /* flex-direction: column; */
-}
-
-.right h1 {
+  }
+  
+  .right h1 {
     position: absolute;
     width: 93px;
     height: 36px;
     left: 320px;
     top: 53px;
-
+  
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -165,26 +158,24 @@
     line-height: 36px;
     /* identical to box height */
     /* Gray 2 */
-
+  
     color: #4F4F4F;
-}
-
-/* ROW 1 */
-
-.right .row1 {
-
+  }
+  
+  /* ROW 1 */
+  
+  .right .row1 {
     position: absolute;
     width: 332px;
     height: 60px;
     left: 319px;
     top: 117px;
-
+  
     display: flex;
     justify-content: space-between;
-
-}
-
-.right .row1-block1 {
+  }
+  
+  .right .row1-block1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -192,143 +183,136 @@
     height: 60px;
     left: 319px;
     top: 117px;
-
-}
-
-.right .row1-block1 button {
+  }
+  
+  .right .row1-block1 button {
     width: 81px;
     height: 36px;
     left: 319px;
     top: 141px;
-
+  
     background: #E0E0E0;
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
-}
-
-.right .row1-block1 span {
+  }
+  
+  .right .row1-block1 span {
     width: 60px;
     height: 12px;
     left: 319px;
     top: 117px;
-
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
-
+  
     color: #333333;
-}
-
-
-.right .row1-block2 {
+  }
+  
+  .right .row1-block2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+  
     width: 96px;
     height: 60px;
     left: 555px;
     top: 117px;
-
-
-}
-
-.right .row1-block2 span {
+  }
+  
+  .right .row1-block2 span {
     width: 96px;
     height: 12px;
     left: 555px;
     top: 117px;
-
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
-
+  
     /* Gray 3 */
-
+  
     color: #828282;
-}
-
-.right .row1-block2 button {
+  }
+  
+  .right .row1-block2 button {
     width: 81px;
     height: 36px;
     left: 555px;
     top: 141px;
-
+  
     background: #AEAEAE;
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
-}
-
-.right .row1-block2 button:hover {
+  }
+  
+  .right .row1-block2 button:hover {
     background: #E0E0E0;
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
-}
-
-.right .row1-block2 button:focus {
+  }
+  
+  .right .row1-block2 button:focus {
     background: #3D5AFE;
-    border-radius: 6px;
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
     color: #FFFF;
-}
-    
-/* ROW 2 */
-.right .row2 {
+  }
+  
+  /* ROW 2 */
+  .right .row2 {
     display: flex;
     justify-content: space-between;
-
+  
     position: absolute;
     width: 332px;
     height: 60px;
     left: 319px;
     top: 222px;
-}
-
-.right .row2-block1 {
-
+  }
+  
+  .right .row2-block1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+  
     width: 168px;
     height: 60px;
     left: 319px;
     top: 222px;
-}
-
-.right .row2-block1 span {
-
+  }
+  
+  .right .row2-block1 span {
     width: 168px;
     height: 12px;
     left: 319px;
     top: 222px;
-
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-
+  
     /* Gray 1 */
-
+  
     color: #333333;
-}
-
-.right .row2-block1 button {
+  }
+  
+  .right .row2-block1 button {
     width: 88px;
     height: 36px;
     left: 319px;
     top: 246px;
-
+  
     border: 1px solid #3D5AFE;
     border-radius: 6px;
-
+  
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 500;
@@ -336,119 +320,124 @@
     line-height: 20px;
     text-align: center;
     color: #3D5AFE;
-
+  
     background-color: #FFF;
-
-}
-
-.right .row2-block2 {
+  }
+  
+  .right .row2-block2 button:hover {
+    background: #E0E0E0;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    border-radius: 6px;
+  }
+  
+  .right .row2-block2 button:focus {
+    background: #3D5AFE;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    border-radius: 6px;
+    color: #FFFF;
+  }
+  
+  .right .row2-block2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+  
     width: 96px;
     height: 60px;
     left: 555px;
     top: 222px;
-}
-
-.right .row2-block2 span {
+  }
+  
+  .right .row2-block2 span {
     /* position: absolute; */
     width: 96px;
     height: 12px;
     left: 555px;
     top: 222px;
-
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-
+  
     text-align: center;
-
+  
     /* Gray 3 */
-
+  
     color: #828282;
-}
-
-.right .row2-block2 button {
+  }
+  
+  .right .row2-block2 button {
     /* position: absolute; */
     width: 88px;
     height: 36px;
     left: 555px;
     top: 246px;
-
+  
     background: rgba(41, 98, 255, 0.1);
     border: 1px solid #3D5AFE;
     border-radius: 6px;
-
+  
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-
+  
     color: #3D5AFE;
-}
-
-
-/* ROW 3 */
-.right .row3 {
+  }
+  
+  /* ROW 3 */
+  .right .row3 {
     display: flex;
     justify-content: space-between;
-
+  
     position: absolute;
-
+  
     width: 332px;
     height: 60px;
     left: 319px;
     top: 327px;
-
-}
-
-.right .row3-block1 {
-
+  }
+  
+  .right .row3-block1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+  
     width: 150px;
     height: 48px;
     left: 319px;
     top: 329px;
-
-}
-
-.right .row3-block1 span {
+  }
+  
+  .right .row3-block1 span {
     width: 160px;
     height: 12px;
     left: 319px;
     top: 329px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     /* Gray 1 */
-    
+  
     color: #333333;
-    
-
-}
-
-.right .row3-block1 button {
+  }
+  
+  .right .row3-block1 button {
     width: 49px;
     height: 20px;
     left: 319px;
     top: 357px;
-    
+  
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 500;
@@ -457,47 +446,55 @@
     text-align: center;
     border: none;
     background-color: #FFF;
-    
+  
     color: #3D5AFE;
-
-}
-.right .row3-block2 {
-
+  }
+  
+  .right .row3-block2 button:hover {
+    background: #E0E0E0;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    border-radius: 6px;
+  }
+  
+  .right .row3-block2 button:focus {
+    background: #3D5AFE;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    border-radius: 6px;
+    color: #FFFF;
+  }
+  
+  .right .row3-block2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
-}
-
-.right .row3-block2 span {
-    width: 96px;
+  }
+  
+  .right .row3-block2 span {
+    width: 100px;
     height: 12px;
     left: 555px;
     top: 327px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 900;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
+  
     text-align: center;
-    
+  
     /* Gray 3 */
-    
+  
     color: #828282;
-
-}
-
-.right .row3-block2 button {
-
+  }
+  
+  .right .row3-block2 button {
     width: 88px;
     height: 36px;
     left: 555px;
     top: 351px;
-    
+  
     background: rgba(41, 98, 255, 0.1);
     border-radius: 6px;
     font-family: 'Noto Sans JP';
@@ -506,59 +503,53 @@
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-
-color: #3D5AFE;
-}
-
-
-/* ROW 4 */
-.right .row4 {
+  
+    color: #3D5AFE;
+  }
+  
+  /* ROW 4 */
+  .right .row4 {
     display: flex;
     justify-content: space-between;
-
+  
     position: absolute;
-
+  
     width: 144px;
     height: 57px;
     left: 319px;
     top: 432px;
-
-}
-
-.right .row4-block1 {
-
+  }
+  
+  .right .row4-block1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.right .row4-block1 span {
+  }
+  
+  .right .row4-block1 span {
     width: 150px;
     height: 12px;
     left: 319px;
     top: 432px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     /* Gray 1 */
-    
+  
     color: #333333;
-
-}
-
-.right .row4-block1 button {
+  }
+  
+  .right .row4-block1 button {
     width: 81px;
     height: 36px;
     left: 319px;
     top: 453px;
-    
+  
     background: #3D5AFE;
     border-radius: 6px;
     font-family: 'Noto Sans JP';
@@ -567,102 +558,89 @@ color: #3D5AFE;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-
+  
     color: #FFFFFF;
-
-
-}
-
-
-/* ROW 5 */
-.right .row5 {
+  }
+  
+  /* ROW 5 */
+  .right .row5 {
     display: flex;
     justify-content: space-between;
-
+  
     position: absolute;
     width: 443px;
     height: 60px;
     left: 319px;
     top: 534px;
-    
-}
-
-.right .row5-block1 {
-    
+  }
+  
+  .right .row5-block1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+  
     width: 443px;
     height: 60px;
     left: 319px;
     top: 534px;
-
-}
-
-.right .row5-block1 span {
-    
+  }
+  
+  .right .row5-block1 span {
     width: 124px;
     height: 12px;
     left: 319px;
     top: 534px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     color: #000000;
-
-}
-
-.right .row5-block1 button {
+  }
+  
+  .right .row5-block1 button {
     width: 88px;
     height: 36px;
     left: 319px;
     top: 558px;
-    
+  
     background: #E0E0E0;
     border-radius: 6px;
-
-}
-
-.right .row5-block2 {
+  }
+  
+  .right .row5-block2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.right .row5-block2 span {
+  }
+  
+  .right .row5-block2 span {
     width: 214px;
     height: 12px;
     left: 558px;
     top: 534px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     /* Gray 1 */
-    
+  
     color: #333333;
-}
-
-.right .row5-block2 button {
-    
+  }
+  
+  .right .row5-block2 button {
     width: 62px;
     height: 20px;
     left: 558px;
     top: 566px;
-    
+  
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 500;
@@ -671,62 +649,54 @@ color: #3D5AFE;
     text-align: center;
     border: none;
     background-color: #FFF;
-    
+  
     color: #9E9E9E;
-}
-
-
-/* ROW 6 */
-.right .row6 {
+  }
+  
+  /* ROW 6 */
+  .right .row6 {
     display: flex;
     justify-content: space-between;
-
+  
     position: absolute;
     width: 572px;
-height: 60px;
-left: 319px;
-top: 639px;
-}
-
-.right .row6-block1 {
-
+    height: 60px;
+    left: 319px;
+    top: 639px;
+  }
+  
+  .right .row6-block1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
-}
-
-.right .row6-block1 span {
+  }
+  
+  .right .row6-block1 span {
     width: 262px;
     height: 12px;
     left: 319px;
     top: 639px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     color: #000000;
-    
-
-}
-
-.right .row6-block1 button {
+  }
+  
+  .right .row6-block1 button {
     width: 105px;
     height: 36px;
     left: 319px;
     top: 663px;
-    
+  
     background: #2962FF;
     box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
     border-radius: 6px;
-
-    font-family: 'Noto Sans JP';
+  
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -734,245 +704,223 @@ top: 639px;
     text-align: center;
     font-family: 'Noto Sans JP';
     color: #FFFFFF;
-
-}
-
-.right .row6-block1 button::before {
-    content: "🛒 ";
-}
-
-.right .row6-block1 button img {
+  }
+  
+  .right .row6-block1 button::before {
+    content: '🛒 ';
+  }
+  
+  .right .row6-block1 button img {
     left: 4.17%;
     right: 13.31%;
     top: 4.17%;
     bottom: 8.33%;
     position: relative;
     margin-right: 5px;
-}
-
-
-.right .row6-block2 {
+  }
+  
+  .right .row6-block2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.right .row6-block2 span {
+  }
+  
+  .right .row6-block2 span {
     width: 250px;
     height: 12px;
     left: 651px;
     top: 639px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     color: #000000;
-    
-}
-
-.right .row6-block2 button {
-width: 105px;
-height: 36px;
-left: 651px;
-top: 663px;
-
-background: #2962FF;
-box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
-border-radius: 6px;
-
-font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #FFFFFF;
-}
-
-.right .row6-block2 button::after {
-        content: " 🛒";
-}
-
-.right .row6-block2 button img { 
+  }
+  
+  .right .row6-block2 button {
+    width: 105px;
+    height: 36px;
+    left: 651px;
+    top: 663px;
+  
+    background: #2962FF;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+    border-radius: 6px;
+  
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  
+  .right .row6-block2 button::after {
+    content: ' 🛒';
+  }
+  
+  .right .row6-block2 button img {
     left: 4.17%;
     right: 13.31%;
     top: 4.17%;
     bottom: 8.33%;
-}
-
-/* ROW 7 */
-.right .row7 {
+  }
+  
+  /* ROW 7 */
+  .right .row7 {
     display: flex;
     justify-content: space-between;
-
+  
     position: absolute;
     width: 532px;
     height: 66px;
     left: 319px;
     top: 744px;
-}
-
-.right .row7-block1 {
+  }
+  
+  .right .row7-block1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.right .row7-block1 span {
+  }
+  
+  .right .row7-block1 span {
     width: 130px;
     height: 12px;
     left: 319px;
     top: 744px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     color: #000000;
-
-}
-
-.right .row7-block1 button {
+  }
+  
+  .right .row7-block1 button {
     width: 73px;
     height: 32px;
     left: 319px;
     top: 773px;
-    
+  
     background: #2962FF;
     box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
     border-radius: 6px;
-
-font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #FFFFFF;
-
-}
-
-
-
-.right .row7-block2 {
+  
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  
+  .right .row7-block2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.right .row7-block2 span {
+  }
+  
+  .right .row7-block2 span {
     width: 130px;
     height: 12px;
     left: 523px;
     top: 744px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     color: #000000;
-    
-}
-
-.right .row7-block2 button {
+  }
+  
+  .right .row7-block2 button {
     width: 81px;
-height: 36px;
-left: 523px;
-top: 771px;
-
-background: #2962FF;
-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
-border-radius: 6px;
+    height: 36px;
+    left: 523px;
+    top: 771px;
+  
+    background: #2962FF;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
     font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #FFFFFF;
-}
-
-.right .row7-block3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  
+  .right .row7-block3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.right .row7-block3 span {
+  }
+  
+  .right .row7-block3 span {
     width: 130px;
     height: 12px;
     left: 731px;
     top: 744px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     color: #000000;
-    
-    
-}
-
-.right .row7-block3 button {
+  }
+  
+  .right .row7-block3 button {
     width: 93px;
     height: 42px;
     left: 731px;
     top: 768px;
-    
+  
     background: #2962FF;
     box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
     border-radius: 6px;
     font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #FFFFFF;
-
-}
-
-/* ROW 8 */
-.right .row8 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  
+  /* ROW 8 */
+  .right .row8 {
     display: flex;
     justify-content: space-between;
-    
+  
     position: absolute;
     width: 802px;
-height: 60px;
-left: 319px;
-top: 855px;
-
-
-
-}
-
-.right .row8-block1 {
+    height: 60px;
+    left: 319px;
+    top: 855px;
+  }
+  
+  .right .row8-block1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -980,362 +928,325 @@ top: 855px;
     height: 60px;
     left: 319px;
     top: 855px;
-
-}
-
-.right .row8-block1 span {
+  }
+  
+  .right .row8-block1 span {
     width: 170px;
     height: 12px;
     left: 322px;
     top: 855px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     color: #000000;
-    
-
-}
-
-.right .row8-block1 button {
+  }
+  
+  .right .row8-block1 button {
     width: 81px;
     height: 36px;
     left: 319px;
     top: 879px;
-    
+  
     background: #E0E0E0;
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
     font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #3F3F3F;
-}
-
-
-
-.right .row8-block2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #3F3F3F;
+  }
+  
+  .right .row8-block2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.right .row8-block2 span {
-
+  }
+  
+  .right .row8-block2 span {
     width: 165px;
-height: 12px;
-left: 523px;
-top: 855px;
-
-font-family: 'Ubuntu Mono';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 12px;
-/* identical to box height */
-
-
-color: #000000;
-    
-}
-
-.right .row8-block2 button {
-
-    width: 81px;
-    height: 36px;
-    left: 523px;
-    top: 879px;
-    
-    background: #2962FF;
-    box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
-    border-radius: 6px;
-    color: #FFF;
-}
-
-.right .row8-block3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.right .row8-block3 span {
-    width: 175px;
     height: 12px;
-    left: 731px;
+    left: 523px;
     top: 855px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     color: #000000;
-    
-    
-}
-
-.right .row8-block3 button {
+  }
+  
+  .right .row8-block2 button {
+    width: 81px;
+    height: 36px;
+    left: 523px;
+    top: 879px;
+  
+    background: #2962FF;
+    box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
+    border-radius: 6px;
+    color: #FFF;
+  }
+  
+  .right .row8-block3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .right .row8-block3 span {
+    width: 175px;
+    height: 12px;
+    left: 731px;
+    top: 855px;
+  
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height */
+  
+    color: #000000;
+  }
+  
+  .right .row8-block3 button {
     width: 104px;
     height: 36px;
     left: 731px;
     top: 879px;
-    
+  
     background: #455A64;
     box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
     border-radius: 6px;
     font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #FFFFFF;
-
-}
-.right .row8-block4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  .right .row8-block4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.right .row8-block4 span {
-
+  }
+  
+  .right .row8-block4 span {
     width: 160px;
-height: 12px;
-left: 971px;
-top: 855px;
-
-font-family: 'Ubuntu Mono';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 12px;
-/* identical to box height */
-
-
-color: #000000;
-    
-}
-
-.right .row8-block4 button {
+    height: 12px;
+    left: 971px;
+    top: 855px;
+  
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height */
+  
+    color: #000000;
+  }
+  
+  .right .row8-block4 button {
     width: 81px;
     height: 36px;
     left: 971px;
     top: 879px;
-    
+  
     background: #D32F2F;
     box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
     border-radius: 6px;
-
+  
     font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #FFFFFF;
-
-}
-
-/* ROW 9 */
-.right .row9 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  
+  /* ROW 9 */
+  .right .row9 {
     display: flex;
     justify-content: space-between;
-    
+  
     position: absolute;
     width: 733px;
     height: 60px;
     left: 319px;
     top: 960px;
-
-}
-
-.right .row9-block1 {
+  }
+  
+  .right .row9-block1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.right .row9-block1 span {
+  }
+  
+  .right .row9-block1 span {
     width: 96px;
     height: 12px;
     left: 319px;
     top: 960px;
-    
+  
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     /* identical to box height */
-    
-    
+  
     /* Gray 3 */
-    
+  
     color: #828282;
-
-}
-
-.right .row9-block1 button {
+  }
+  
+  .right .row9-block1 button {
     width: 81px;
     height: 36px;
     left: 319px;
     top: 984px;
-    
+  
     background: #AEAEAE;
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
-
+  
     font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #3F3F3F;
-
-}
-
-
-
-.right .row9-block2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #3F3F3F;
+  }
+  
+  .right .row9-block2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-.right .row9-block2 button {
-
+  }
+  
+  .right .row9-block2 button {
     width: 81px;
     height: 36px;
     left: 523px;
     top: 984px;
-    
+  
     background: #0039CB;
     box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
     border-radius: 6px;
-
+  
     font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #FFFFFF;
-}
-
-.right .row9-block3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  
+  .right .row9-block3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-
-.right .row9-block3 button {
+  }
+  
+  .right .row9-block3 button {
     width: 104px;
     height: 36px;
     left: 731px;
     top: 984px;
-    
+  
     background: #1C313A;
     box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
     border-radius: 6px;
     font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #FFFFFF;
-
-}
-.right .row9-block4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  .right .row9-block4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
-
-
-.right .row9-block4 button {
+  }
+  
+  .right .row9-block4 button {
     width: 81px;
     height: 36px;
     left: 971px;
     top: 984px;
-    
+  
     background: #9A0007;
     box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
     border-radius: 6px;
     font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-
-color: #FFFFFF;
-
-
-}
-
-.icons-text-span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  
+  .icons-text-span {
     position: absolute;
     width: 330px;
-height: 12px;
-left: 320px;
-top: 1072px;
-
-font-family: 'Ubuntu Mono';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 12px;
-/* identical to box height */
-
-
-/* Gray 3 */
-
-color: #828282;
-}
-
-.created-by-text-span {
+    height: 12px;
+    left: 320px;
+    top: 1072px;
+  
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height */
+  
+    /* Gray 3 */
+  
+    color: #828282;
+  }
+  
+  .created-by-text-span {
     position: absolute;
-width: 287px;
-height: 17px;
-left: 322px;
-top: 1118px;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-/* identical to box height */
-
-/* text-align: center; */
-
-color: #A9A9A9;
-}
+    width: 287px;
+    height: 17px;
+    left: 322px;
+    top: 1118px;
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+  
+    /* text-align: center; */
+  
+    color: #A9A9A9;
+  }
+  

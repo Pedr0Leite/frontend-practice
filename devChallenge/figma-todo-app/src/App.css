@@ -225,3 +225,7 @@ hr {
 .checkbox-text-2 {
   text-decoration: line-through;
 }
+
+ul {
+  list-style-type: none;
+}

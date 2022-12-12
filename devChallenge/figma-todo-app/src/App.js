@@ -11,10 +11,6 @@ function App() {
     setCurrentState(value)
   }
 
-  // useEffect(() => {
-
-  // }, [currentState]);
-
   return (
     <div className="App">
      <Navbar handleClick={handleClick}></Navbar>

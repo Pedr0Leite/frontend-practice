@@ -2,24 +2,24 @@ import React, { useEffect, useState } from "react";
 
 export default function Navbar(props) {
 
-const [state, setState] = useState('all');
+const [projState, setProjState] = useState('all');
 
 const onClickAll = () => {
-  setState('all')
+  setProjState('all')
 
 }
 const onClickActive = () => {
-  setState('active')
+  setProjState('active')
   
 }
 const onClickCompleted = () => {
-  setState('completed')
+  setProjState('completed')
   
 }
 
 useEffect(() => {
-  props.handleClick(state);
-},[state]);
+  props.handleClick(projState);
+},[projState]);
 
   return (
 <div className="nav">

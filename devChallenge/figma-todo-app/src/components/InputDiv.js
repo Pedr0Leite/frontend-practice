@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { v4 as uuidv4 } from 'https://cdn.skypack.dev/uuid';
+import { v4 as uuidv4 } from "uuid";
 import TodoEntries from './TodoEntries';
 
 
@@ -36,7 +36,6 @@ export default function InputDiv(props) {
       }, []);
     
 
-
 const onChangeInput = (e) => {
     e.preventDefault();
     setEntryText(e.target.value)
@@ -69,6 +68,14 @@ const onClickAddEntry = () => {
         localStorage.clear();
     }
 
+    const onClickDelete = (sysid) => {
+        // console.log(entry)
+        // localStorage.removeItem(sysid);
+        // const arrayWithoutRemoved = entry.filter(obj => obj.id !== sysid);
+        // console.log('arrayWithoutRemoved :', arrayWithoutRemoved);
+
+    }
+
 
   return ( (parentState === "all" || parentState === "active" || parentState === "") ?
     <>
@@ -76,14 +83,12 @@ const onClickAddEntry = () => {
     <input type="text" id="input-text" onChange={onChangeInput} name="input-text" value={entryText} className="input-text" placeholder="add details" required></input>
     <button id="input-button" onClick={onClickAddEntry} className="input-button">Add</button>
 </div>
-    <TodoEntries setEntry={entry} state={parentState} handleCompleteTodo={handleCompleteTodo} handleNotCompleteTodo={handleNotCompleteTodo} deleteAll={onClickDeleteAllEntries}></TodoEntries>
+    <TodoEntries setEntry={entry} state={parentState} handleCompleteTodo={handleCompleteTodo} handleNotCompleteTodo={handleNotCompleteTodo} deleteEntry={onClickDelete} deleteAll={onClickDeleteAllEntries}></TodoEntries>
     </>
     :
-    <TodoEntries setEntry={entry} state={parentState} handleCompleteTodo={handleCompleteTodo} handleNotCompleteTodo={handleNotCompleteTodo} deleteAll={onClickDeleteAllEntries}></TodoEntries>
+    <TodoEntries setEntry={entry} state={parentState} handleCompleteTodo={handleCompleteTodo} handleNotCompleteTodo={handleNotCompleteTodo} deleteEntry={onClickDelete} deleteAll={onClickDeleteAllEntries}></TodoEntries>
   )
 }
-
-
 
 // //Set item
 // localStorage.setItem('myCat', 'Tom');
