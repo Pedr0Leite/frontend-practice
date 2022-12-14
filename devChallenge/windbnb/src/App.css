@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.header-logo span {
+  position: absolute;
+width: 69px;
+height: 14px;
+left: 121px;
+top: 49px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 21px;
+
+color: #EB5757;
+}
+
+.header-logo img {
+  position: absolute;
+width: 21.65px;
+height: 18.75px;
+left: 94px;
+top: 46px;
+
+/* background: #EB5757; */
+border-radius: 3px;
+}

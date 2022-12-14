@@ -12,11 +12,6 @@
 }
 
 .todo-title {
-  /* position: absolute; */
-  /* width: 100vw;
-    height: 41px;
-    left: 659px;
-    top: 32px; */
   align-self: center;
 
 }
@@ -50,7 +45,6 @@ hr {
   align-items: center;
   justify-content: space-around;
   width: 50vw;
-  /* flex-direction: row; */
 
 }
 
@@ -86,7 +80,6 @@ hr {
 .input-text {
   box-sizing: border-box;
 
-  /* position: absolute; */
   width: 40vw;
   height: 56px;
   left: 414px;
@@ -130,18 +123,8 @@ hr {
   flex-direction: column;
 }
 
-/* .todo-entry-div {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "checkbox label deletebutton"; 
-    background-color: pink;
-} */
 
 .todo-entries {
-  /* background-color: #2F80ED; */
   display: flex;
   justify-content: space-around;
   margin-right: 15vw;
@@ -159,7 +142,6 @@ hr {
 
   border: 1px solid #828282;
   border-radius: 4px;
-  /* grid-area: checkbox; */
 }
 
 .todo-entries form label {
@@ -178,7 +160,6 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  /* background-color: #0cd5e7; */
   width: 70vw;
   margin-top: 5%;
 }
@@ -188,7 +169,6 @@ hr {
   border: none;
   justify-self: flex-end;
   margin-left: 5%;
-  /* grid-area: deletebutton; */
 }
 
 .delete-button::after {
@@ -228,4 +208,28 @@ hr {
 
 ul {
   list-style-type: none;
+}
+
+footer {
+  position:fixed;
+   left:0px;
+   bottom:0px;
+   height:50px;
+   width:100%;
+}
+
+.created-by-text-span{
+
+  width: 100vw;
+  margin-left: 10vw;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  
+  text-align: center;
+  
+  color: #A9A9A9;
 }

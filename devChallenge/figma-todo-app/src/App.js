@@ -15,6 +15,9 @@ function App() {
     <div className="App">
      <Navbar handleClick={handleClick}></Navbar>
      <InputDiv currentState={currentState}></InputDiv>
+     <footer>
+     <span className="created-by-text-span">created by Pedr0Leite - devChallenges.io</span>
+     </footer>
     </div>
   );
 }

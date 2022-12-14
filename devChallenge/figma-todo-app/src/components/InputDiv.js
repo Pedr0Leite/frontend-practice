@@ -43,7 +43,6 @@ const onChangeInput = (e) => {
 
 const onClickAddEntry = () => {
     var uniqueID = uuidv4();
-    console.log('uniqueID :', uniqueID);
     var newEntry = new Entry(entryText, uniqueID, true);
 
     
@@ -117,12 +116,3 @@ const onClickAddEntry = () => {
     </>
   )
 }
-
-// //Set item
-// localStorage.setItem('myCat', 'Tom');
-// //Get item
-// var cat = localStorage.getItem("myCat");
-// //Remove item
-// localStorage.removeItem("lastname");
-// //Remove all items
-// localStorage.clear();
