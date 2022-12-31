@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+            src: local('Material Icons'),
+              local('MaterialIcons-Regular'),
+              url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+              url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+              url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+          }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title>Input Page</title>
+
+  </head>
+  <body>
+    <div class="left">
+      <h3><span>Dev</span>challenges.io</h3>
+      <ul>
+        <li>Typography</li>
+        <li>Grid</li>
+        <li>Buttons</li>
+        <li>Input</li>
+      </ul>
+
+  </div>
+  <div class="right">
+    <div class="title">
+      <h1>Inputs</h1>
+    </div>
+    <div class="row1">
+      <div class="row-block1">
+        <span>
+            < /input>
+        </span>
+        <label>Label</label>
+        <input placeholder="placeholder">
+    </div>
+    <div class="row-block2">
+      <span>
+        &:hover
+    </span>
+    <label>Label</label>
+    <input placeholder="placeholder">
+    </div>
+    <div class="row-block3">
+      <span>
+        &:focus
+    </span>
+    <label>Label</label>
+    <input placeholder="placeholder">
+  </div>
+</div>
+  <div class="row2">
+    <div class="row-block1">
+      <span>
+          < /input error>
+      </span>
+      <label>Label</label>
+      <input placeholder="placeholder" error="true">
+  </div>
+  <div class="row-block2">
+    <span>
+      &:hover
+  </span>
+  <label>Label</label>
+  <input placeholder="placeholder">
+  </div>
+  <div class="row-block3">
+    <span>
+      &:focus
+  </span>
+  <label>Label</label>
+  <input placeholder="placeholder">
+</div>
+  </div>
+  <div class="row3">
+    <div class="row-block1">
+      <span>
+          < input disabled />
+      </span>
+      <label>Label</label>
+      <input placeholder="placeholder" disabled>
+  </div>
+  </div>
+    <div class="row4">
+      <div class="row-block1">
+        <span>
+          < Input helperText="Some interesting text" />
+        </span>
+        <label>Label</label>
+        <input placeholder="placeholder" helperText="Some interesting text">
+        <small>Some interesting text</small>
+      </div>
+      <div class="row-block2">
+        <span>
+        < Input helperText="Some interesting text" error />
+    </span>
+    <label>Label</label>
+    <input placeholder="placeholder">
+    <small>Some interesting text</small>
+    </div>
+  </div>
+    <div class="row5">
+      <div class="row-block1">
+        <span>
+          < Input startIcon />
+        </span>
+        <label>Label</label>
+        <label class="row-block1-input-label">
+          <input placeholder="placeholder">
+        </label>
+    </div>
+    <div class="row-block2">
+      <span>
+        < Input endIcon />
+    </span>
+    <label>Label</label>
+    <label class="row-block2-input-label">
+    <input placeholder="placeholder">
+    </label>
+    </div>
+    </div>
+    <div class="row6">
+      <div class="row-block1">
+      <span>
+          < /input value="text" />
+      </span>
+      <label>Label</label>
+      <input value="Text">
+  </div></div>
+    <div class="row7"><div class="row-block1">
+      <span>
+          < input size="sm" />
+      </span>
+      <label>Label</label>
+      <input size="sm" placeholder="placeholder">
+  </div>
+  <div class="row-block2">
+    <span>
+      < input size="md" />
+  </span>
+  <label>Label</label>
+  <input placeholder="placeholder">
+  </div></div>
+    <div class="row8"><div class="row-block1">
+      <span>
+        < input fullWidth />
+      </span>
+      <label>Label</label>
+      <input placeholder="placeholder">
+  </div></div>
+    <div class="row9"><div class="row-block1">
+      <span>
+        < Input multiline row="4" />
+      </span>
+      <label>Label</label>
+      <textarea placeholder="placeholder" multiple row="4"></textarea>
+  </div></div>
+</div>
+  </body>
+</html>
