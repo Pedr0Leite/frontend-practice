@@ -267,3 +267,51 @@ color: #828282;
 .row9 .row-block1 textarea{
     height: 100vh !important;
 }
+
+.created-by {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 50px;
+    row-gap: 1vh;
+}
+
+.icons-text-span {
+    /* position: absolute; */
+    width: 330px;
+    height: 12px;
+    left: 320px;
+    top: 1072px;
+  
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height */
+  
+    /* Gray 3 */
+  
+    color: #828282;
+  }
+  
+  .created-by-text-span {
+    /* position: absolute; */
+    width: 287px;
+    height: 17px;
+    left: 322px;
+    top: 1118px;
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+  
+    /* text-align: center; */
+  
+    color: #A9A9A9;
+  }

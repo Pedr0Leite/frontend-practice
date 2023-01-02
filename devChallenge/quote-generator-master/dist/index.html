@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  rel="stylesheet" />
+    <title>quote generator</title>
+  </head>
+  <body>
+    <div class="random-button-div">
+      <label>random</label>
+      <button class="random-button" id="random-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16"> <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/> <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/> </svg>
+      </button>
+    </div>
+    <div id="quote-body-div" class="quote-body-div">
+      <div class="quote-div-with-vl">
+        <!-- <div class="vl"></div> -->
+        <ul id="ul-quote-list" class="ul-quote-list">
+          <li>
+            <div class="vl"></div>
+            <blockquote id="initial-quote">TEST</blockquote>
+          </li>
+          <li>
+            <div class="vl"></div>
+            <blockquote id="initial-quote">TEST</blockquote>
+          </li>
+        </ul>
+      </div>
+      <div id="reference-button-div">
+        <button id="reference-button" class="reference-button">
+          <div id="button-span-div" class="button-span-div">
+            <!-- <span id="span-title" class="span-title"></span> -->
+            <figcaption id="span-sub-title" class="span-sub-title">business</figcaption>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+<div class="created-by">
+    <span class="created-by-text-span">created by <b>Pedr0Leite</b> - devChallenges.io</span>
+  </div>
+  <script src="main.js"></script>
+  </body>
+</html>
