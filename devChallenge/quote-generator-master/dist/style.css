@@ -27,8 +27,11 @@ body{
     transform: rotate(360deg);
     transition: transform 0.5s;
 }
+.random-button:hover {
+    cursor: progress;
+}
 
-button:active {
+.random-button:active {
     transform: rotate(0deg);
     transition: 0s;
 }
@@ -40,22 +43,15 @@ button:active {
     justify-content: center;
     align-items: center;
     margin-top: 20vh;
-    /* width: 672px; */
-    /* position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100vh; */
-
 
 }
 
-/* .quote-div-with-vl {
+.quote-div-with-vl {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 672px;
-} */
+}
 
 .ul-quote-list {
     display: flex;
@@ -117,13 +113,14 @@ block-size: fit-content;
 
     border: none;
     /* background: #FFF; */
-
 }
 
 .reference-button:hover {
     background: #333333;
-    cursor: pointer;
+    cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+    /* cursor: pointer; */
 }
+
 
 .reference-button:hover .span-title{
     color: #FFF;

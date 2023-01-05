@@ -63,6 +63,8 @@ let initialQuote = document.querySelector('#initial-quote');
 
 let buttonSpanDiv = document.getElementById('button-span-div');
 let spanTitle = document.getElementById('span-title');
+let vl = document.createElement('div');
+vl.className = 'vl';
 
 if(initialQuote != undefined){
   ul?.removeChild(initialQuote);
@@ -81,7 +83,8 @@ let randomInitialQuote = quotes[randomDigit];
 
   let blockquote = document.createElement('blockquote');    
   
-  blockquote.appendChild(document.createTextNode(`"${randomInitialQuote.quote}"`))
+  blockquote.appendChild(document.createTextNode(`"${randomInitialQuote.quote}"`));
+  li.appendChild(vl);
   li.appendChild(blockquote);
   ul?.appendChild(li);
   
@@ -93,25 +96,6 @@ let randomInitialQuote = quotes[randomDigit];
   newSpanTitle?.appendChild(document.createTextNode(randomInitialQuote.name));
   buttonSpanDiv?.prepend(newSpanTitle);
 
-// function getQuote(){
-
-//   const options = {
-//     method: 'POST',
-//     url: 'https://andruxnet-random-famous-quotes.p.rapidapi.com/',
-//     params: {cat: 'famous', count: '10'}, //cat -> movies or famous
-//     headers: {
-//       'X-RapidAPI-Key': '77ed6a4f06mshecb6d6bb52d3940p14ca6bjsn766dee5f81a9',
-//       'X-RapidAPI-Host': 'andruxnet-random-famous-quotes.p.rapidapi.com'
-//     }
-//   };
-  
-//   axios.request(options).then(function (response: any) {
-//     console.log(response.data);
-//   }).catch(function (error: string) {
-//     console.error(error);
-//   });
-// };
-
 function getRandomQuote(){
 
   let ul = document.getElementById('ul-quote-list');
@@ -121,12 +105,17 @@ function getRandomQuote(){
   let spanTitle = document.getElementById('span-title');
 
   if(initialQuote != undefined){
-    ul?.removeChild(initialQuote);
+    while(ul?.firstChild){
+      ul?.removeChild(ul?.firstChild);
+    }
   }
 
   if(spanTitle != undefined){
     buttonSpanDiv?.removeChild(spanTitle);
   }
+
+  const referenceButtonDiv = document.getElementById("reference-button-div")
+  referenceButtonDiv!.style.display = '';
 
   let randomDigit = Math.abs(Math.floor(Math.random() * quotes.length - 1));
   let randomInitialQuote = quotes[randomDigit];
@@ -140,7 +129,8 @@ function getRandomQuote(){
 
     let blockquote = document.createElement('blockquote');    
     
-    blockquote.appendChild(document.createTextNode(randomInitialQuote.quote))
+    blockquote.appendChild(document.createTextNode(`"${randomInitialQuote.quote}"`))
+    li.appendChild(vl);
     li.appendChild(blockquote);
     ul?.appendChild(li);
     
@@ -173,15 +163,18 @@ referenceButton?.addEventListener("click", () => {
   let spanTitle = document.getElementById('span-title')?.innerText;
 
   let personQuotes = quotes.filter(x => x.name == spanTitle);
-
+  
   personQuotes.forEach((quote,i) =>{
     //Add new Quote
     let li = document.createElement('li');
     li.id = i.toString();
-
-    let blockquote = document.createElement('blockquote');    
     
-    blockquote.appendChild(document.createTextNode(quote.quote))
+    let blockquote = document.createElement('blockquote');    
+    let vl = document.createElement('div');
+    vl.className = 'vl';
+    
+    blockquote.appendChild(document.createTextNode(`"${quote.quote}"`))
+    li.appendChild(vl);
     li.appendChild(blockquote);
     ul?.appendChild(li);
   }
