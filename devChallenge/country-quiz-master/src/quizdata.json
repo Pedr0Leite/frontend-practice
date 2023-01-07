@@ -23,24 +23,24 @@
     },
     {
       "number": 3,
-      "question": "The next number in the sequence <b>1, 3, 6, 10, </b> is:",
+      "question": "How many planets exists:",
       "answers": [
-        "12",
-        "13",
-        "14",
-        "15"
+        "10",
+        "5",
+        "100",
+        "9"
       ],
       "correct_answer": 4
     },
     {
       "number": 4,
-      "question": "The next number in the sequence <b>1, 3, 6, 10, </b> is:",
+      "question": "Whats the name of Iron-Man?",
       "answers": [
-        "12",
-        "13",
-        "14",
-        "15"
+        "Tony Kraken",
+        "Lenny Start",
+        "Tony Stark",
+        "Man Iron"
       ],
-      "correct_answer": 4
+      "correct_answer": 3
     }
   ]}

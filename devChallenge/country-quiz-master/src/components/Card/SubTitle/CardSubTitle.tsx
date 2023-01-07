@@ -1,13 +1,12 @@
-import { HTMLAttributes, ReactNode } from 'react';
+import { HTMLAttributes } from 'react';
 import * as Styled from './CardSubTitle.styled';
 
-interface DivProps extends HTMLAttributes<HTMLDivElement> {
-    // children: ReactNode;
+interface CardSubTitleProps extends HTMLAttributes<HTMLDivElement> {
     subtitle: string;
   }
 
 
-  export function CardTitleAndLogo({ subtitle, ...props }: DivProps) {
+  export function CardTitleAndLogo({ subtitle, ...props }: CardSubTitleProps) {
     return (
         <Styled.CardSubTitle></Styled.CardSubTitle>
     )

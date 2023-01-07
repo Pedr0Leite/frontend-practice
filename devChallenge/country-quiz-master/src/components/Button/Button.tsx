@@ -7,5 +7,5 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   }
 
   export function Button({ content, ...props }: ButtonProps) {
-    return <Styled.NextButton {...props}>{content}</Styled.NextButton>;
+    return <Styled.NextButton data-testid="cardnextbutton" {...props}>{content}</Styled.NextButton>;
   }
