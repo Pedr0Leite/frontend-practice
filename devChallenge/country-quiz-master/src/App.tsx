@@ -148,6 +148,9 @@ function App() {
       <CardTitleAndLogo title="country quiz" logo={logo} showFinishCard={!showFinishCard}></CardTitleAndLogo>
       {showFinishCard ? <FinishCard finishLogo={finishLogo} correctAnswers={numberOfCorrect} onclickforbutton={tryAgain}></FinishCard> : null}
       {!showFinishCard ? <CardGame onClickOption={onClickOption} classChoice1={classChoice1} classChoice2={classChoice2} classChoice3={classChoice3} classChoice4={classChoice4} currentQuestionAnswer={currentQuestion.answers} question={currentQuestion.question} nextQuestion={(e) => {nextQuestion(e)}}></CardGame> : null}
+      <footer>
+     <span className="created-by-text-span">created by Pedr0Leite - devChallenges.io</span>
+     </footer>
 </div>
   );
 }

@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 
-interface DivProps extends HTMLAttributes<HTMLDivElement> {
+interface CardGameDivProps extends HTMLAttributes<HTMLDivElement> {
     question: string;
     nextQuestion: (e: any) => void;
     onClickOption: (value: number) => void;
@@ -62,7 +62,7 @@ function ListOfQuestions({onClickOption, classChoice1, classChoice2, classChoice
     )
 }
 
-export function CardGame({question, nextQuestion,onClickOption, classChoice1, classChoice2, classChoice3, classChoice4,currentQuestionAnswer, ...props }: DivProps) {
+export function CardGame({question, nextQuestion,onClickOption, classChoice1, classChoice2, classChoice3, classChoice4,currentQuestionAnswer, ...props }: CardGameDivProps) {
 return (
     <Styled.CardDiv>
         <CardSubTitle>{question}</CardSubTitle>
