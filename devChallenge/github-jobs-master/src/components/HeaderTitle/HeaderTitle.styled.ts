@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const HeaderTitle = styled.h1`
-// position: absolute;
-// z-index: 60;
 width: auto;
 height: 36px;
 left: 120px;

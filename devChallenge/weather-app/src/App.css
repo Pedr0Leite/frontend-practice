@@ -1,0 +1,673 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #100E1D;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/* .leftside {
+  background: #1E213A;
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 10px 0 10px;
+} */
+
+.leftside-search-info {
+	width: 100%;
+	height: 5vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.leftside-search-button {
+	width: 200px;
+	height: 40px;
+	align-self: center;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.leftside-button-search-for-places {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #E7E7EB;
+	background: #6E707A;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border: none;
+	width: 161px;
+}
+
+.leftside-search-gps {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-self: center;
+	align-content: center;
+	justify-content: flex-end;
+	background-color: gray;
+	border-radius: 50%;
+}
+
+.leftside-button-gps {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  align-self: center;
+  background: url(./assets/my-location.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.leftside-weather-icon-div {
+  width: 100%;
+  height: 250px;
+  background: url(./assets/Cloud-background.png);
+  background-size: 150% 125%;
+  background-repeat: no-repeat;
+  background-position-y: -25px;
+  background-position-x: -84px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.leftside-weather-icon {
+  align-self: center;
+  background: url(./assets/Thunderstorm.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+  background-position-x: center;
+
+}
+
+
+.leftside-weather-temp {
+  width: 100%;
+  height: 10vw;
+  /* background-color:rgb(255, 64, 0); */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 169px;
+  color: #E7E7EB;
+  text-align: center;
+  margin-top: -50px;
+
+}
+
+.leftside-weather-temp span {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 144px;
+  line-height: 169px;
+
+  color: #E7E7EB;
+
+}
+
+
+.leftside-weather-info {
+  width: 100%;
+  height: 2vw;
+  /* background-color:rgb(255, 255, 0); */
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #A09FB1;
+
+
+}
+
+.leftside-date {
+  width: 100%;
+  height: 1vh;
+  /* background-color:rgb(255, 0, 51); */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #88869D;
+
+
+
+}
+
+.leftside-location {
+  width: 100%;
+  height: 1vh;
+  /* background-color:rgb(0, 225, 255); */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #88869D;
+  margin-bottom: 1vh;
+
+}
+
+.leftside-search {
+	/* background-color: aquamarine; */
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.leftside-search-button-close {
+	position: relative;
+	left: 90%;
+	width: 25px;
+	height: 25px;
+	background: none;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 60px;
+	font-size: large;
+	font-weight: bolder;
+	color: #E7E7E9;
+}
+
+.leftside-search-form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.leftside-search-form button{
+  font-family: 'Raleway';
+  font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+
+color: #E7E7EB;
+background: #3C47E9;
+height: 35px;
+border: none;
+border-radius: 1px;
+}
+
+.leftside-search-form input {
+	box-sizing: border-box;
+	border: 1px solid #E7E7EB;
+	margin-right: 10px;
+	margin-top: 5px;
+	height: 30px;
+  background-color: #1E213A;
+  color: #E7E7EB;
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+margin-top: 0px;
+padding-left: 5px;
+}
+
+.leftside-search-form input::before{
+  position: absolute;
+    width: 20px;
+    background: url("./assets/icons-search.svg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.leftside-search-form input::placeholder {
+  background-color: #1E213A;
+  color: #E7E7EB;
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+}
+
+.leftside-search-form input:focus{
+  outline:none;
+  color: #E7E7EB;
+}
+
+.search-form-results {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	margin: 0 55px 0 55px;
+}
+
+.search-form-results button {
+	background-color: #1E213A;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #E7E7EB;
+	border: none;
+	text-align: start;
+  height: 50px;
+}
+
+.search-form-results button:focus {
+  border: 1px solid #616475;
+}
+
+
+/* .rightside {
+  background: #100E1D;
+  width: 75vw;
+  height: 100vh;
+  padding: 0px 150px 0 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  flex-wrap: wrap;
+} */
+
+
+.rightside-degrees {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 10px;
+}
+
+.rightside-degrees-c, 
+.rightside-degrees-f {
+  width: 40px;
+  height: 40px;
+  border-radius: 54px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  border:none;
+}
+
+.rightside-degrees-c{
+  color: #110E3C;
+  background: #E7E7EB;
+}
+
+.rightside-degrees-f {
+color: #E7E7EB;
+background: #585676;
+}
+
+/* .rightside-degrees-f {
+  width: 40px;
+  height: 40px;
+
+  background: #585676;
+  border-radius: 54px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #E7E7EB;
+
+} */
+
+.rightside-weather-days {
+	width: 100%;
+	height: 20vh;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 35px;
+}
+
+.rightside-weather-days-card-1,
+.rightside-weather-days-card-2,
+.rightside-weather-days-card-3,
+.rightside-weather-days-card-4,
+.rightside-weather-days-card-5{
+  width: 140px;
+  height: 170px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 15px;
+  row-gap: 15px;
+  background: #1E213A;
+}
+
+.rightside-weather-days-card-title-1,
+.rightside-weather-days-card-title-2,
+.rightside-weather-days-card-title-3,
+.rightside-weather-days-card-title-4,
+.rightside-weather-days-card-title-5{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 5px;
+
+  color: #E7E7EB;
+}
+
+/* .rightside-weather-days-card-icon-1,
+.rightside-weather-days-card-icon-2,
+.rightside-weather-days-card-icon-3,
+.rightside-weather-days-card-icon-4,
+.rightside-weather-days-card-icon-5 {
+  align-self: center;
+  background: url(./assets/Thunderstorm.png);
+  width: 100%;
+  height: 45%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+  background-position-x: center;
+} */
+
+.rightside-weather-days-card-temp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightside-weather-days-card-temp-max-1,
+.rightside-weather-days-card-temp-min-1,
+.rightside-weather-days-card-temp-max-2,
+.rightside-weather-days-card-temp-min-2,
+.rightside-weather-days-card-temp-max-3,
+.rightside-weather-days-card-temp-min-3,
+.rightside-weather-days-card-temp-max-4,
+.rightside-weather-days-card-temp-min-4,
+.rightside-weather-days-card-temp-max-5,
+.rightside-weather-days-card-temp-min-5{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E7E7EB;
+}
+
+.rightside-highlight-title {
+  width: 100%;
+  height: 4vh;
+  /* background-color: rgb(45, 48, 251); */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #E7E7EB;
+  padding: 20px 0 0px 0;
+}
+
+.rightside-weather-card-info {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.weather-card-wind,
+.weather-card-humidity,
+.weather-card-visibility,
+.weather-card-air {
+	width: 26vw;
+	height: 25vh;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+  background: #1E213A;
+}
+
+.weather-card-title{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  
+  color: #E7E7EB;
+}
+
+.weather-card-info{
+  height: 75px;
+  
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  
+  color: #E7E7EB;
+}
+
+.weather-card-info span{
+  height: 75px;
+  
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 75px;
+  
+  color: #E7E7EB;
+}
+
+/* .weather-card-wind-bottom-info{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  
+  height: 40px;
+  color: #E7E7EB;
+}
+
+.weather-card-wind-bottom-info::before {
+  background-image: url('./assets/wind-direction/wsw.png');
+	background-size: 25px 28px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	content: "";
+	background-repeat: no-repeat;
+	background-position-y: 7px;
+	background-color: gray;
+	border-radius: 50%;
+	background-position-x: 6px;
+} */
+
+.progress-bar-div {
+	width: 75%;
+	align-self: center;
+}
+
+
+.created-by-text-span {
+
+  width: 100vw;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #F2F2F2;
+}
+
+footer {
+  /* margin-top: 5vh; */
+  display: flex;
+  width: 100%;
+
+}
+
+
+@media only screen and (max-width: 900px) {
+  .App{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .leftside-weather-icon{
+    height: 60%;
+  }
+
+  .leftside-weather-icon-div{
+    background-size: 125% 100%;
+  }
+
+  .leftside-weather-temp{
+    font-size: 40px;
+  }
+
+  .leftside-weather-temp span{
+    font-size: 80px;
+  }
+
+  .leftside-weather-info{
+    font-size: 25px;
+  }
+
+  .leftside-date{
+    font-size: 15px;
+  }
+
+  .leftside-location{
+    font-size: 16px;
+  }
+
+  .rightside-weather-card-info{
+    column-gap: 0;
+    height: 65vh;
+  }
+
+  .rightside-highlight-title{
+    margin-top: 200px;
+  }
+
+  .rightside-weather-days{
+    column-gap: 10px;
+  }
+
+  .weather-card-info{
+    font-size: 22px;
+  }
+
+  .weather-card-info span{
+    font-size: 15px;
+  }
+
+  .weather-card-wind,
+.weather-card-humidity,
+.weather-card-visibility,
+.weather-card-air {
+  justify-content: space-evenly;
+  width: 22vw;
+}
+
+.weather-card-wind-bottom-info{
+  font-size: 10px;
+}
+
+.weather-card-wind-bottom-info::before{
+  background-size: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

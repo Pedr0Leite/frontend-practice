@@ -15,7 +15,7 @@ body{
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	height: 95vh;
+	height: 105vh;
 	row-gap: 25px;
 }
 
@@ -23,7 +23,7 @@ body{
 .searchinput{
   background-color: rgb(0, 179, 255);
 width: 100%;
-height: 138px;
+height: 150px;
 left: 120px;
 top: 100px;
 
@@ -42,15 +42,28 @@ border-radius: 4px;
 }
 
 .main-jobs-body{
-  background-color: rgb(6, 167, 167);
+  /* background-color: rgb(6, 167, 167); */
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 100%;
 }
 
-.country-input-label{
+/* .country-input-label{
   position: relative;
+} */
+
+#checkbox label{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 21px;
+
+/* identical to box height */
+text-transform: uppercase;
+
+color: #B9BDCF;
 }
 
 /* .country-input-label::before{
@@ -68,12 +81,347 @@ border-radius: 4px;
   width: 30vw;
 } */
 
-.country-radio-button-form label {
+/* .country-radio-button-form label {
   padding-left: 10px;
-}
+} */
 
-.rightside-main-jobs-body{
+/* .rightside-main-jobs-body{
   background-color: rgb(142, 158, 0);
   width: 65%;
   height: 100%;
+} */
+
+.card {
+	position: relative;
+	/* background-color: aqua; */
+	width: auto;
+	height: 114px;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-logo{
+  align-self: center;
+  width: max-content;
+  height: 10vh;
+  margin-left: 10px;
+}
+
+.card-job{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+
+color: #334680;
+}
+
+.card-type-of-role{
+  
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+box-sizing: border-box;
+width: 63px;
+color: #334680;
+
+border: 1px solid #334680;
+border-radius: 4px;
+}
+
+.card-company{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+color: #334680;
+}
+
+.card-job-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-left: 25px;
+}
+
+.card-location, .card-posted {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: 15px;
+
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+
+color: #B7BCCE;
+}
+
+.card-location::before{
+  content: url('./assets/globe.svg');
+  width: 15px;
+  height: 5px;
+  margin-right: 2px;
+}
+
+/* From the custom pagination component */
+/* .pagination {
+  justify-content: center;
+}
+
+.page-link:hover {
+  background-color: #1E86FF;
+  color:#FFF;
+} */
+
+.ant-pagination.css-dev-only-do-not-override-sk7ap8{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.specific-job{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.specific-job-leftside {
+	width: 20%;
+	margin-right: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	row-gap: 10px;
+  
+}
+
+.specific-job-leftside h6 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 21px;
+  text-transform: uppercase;
+  
+  color: #B9BDCF;
+}
+
+.specific-job-leftside-howtoapply {
+  width: 100%;
+height: 10vh;
+word-wrap: break-word;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 15px;
+
+color: #334680;
+}
+
+.specific-job-rightside{
+  width: 85%;
+  
+}
+
+.specific-job-rightside a{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+    
+  color: #1E86FF;
+}
+
+.specific-job-rightside span{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  
+  color: #334680;
+}
+
+.specific-job-title{
+  display: flex;
+
+}
+
+.specific-job-card-type-of-role{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+align-self: center;
+text-align: center;
+box-sizing: border-box;
+color: #334680;
+border: 1px solid #334680;
+border-radius: 4px;
+margin-left: 15px;
+}
+
+.specific-job-description{
+  height: 100%;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 100%;
+width: fit-content;
+height: fit-content;
+margin-top: 35px;
+
+color: #334680;
+}
+
+.specific-job-description h5{
+  font-size: 14px;
+  
+}
+
+.posted-on{
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: 15px;
+
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+
+color: #B7BCCE;
+}
+
+.specific-job-company-and-logo-and-location{
+  display: flex;
+}
+
+.card-logo{
+  width: 42px;
+height: 42px;
+border-radius: 4px;
+}
+
+.specific-job-company{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+
+color: #334680;
+}
+
+.specific-job-location{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+color: #B9BDCF;
+
+}
+
+.specific-job-company-and-location{
+  margin-left: 10px;
+}
+
+.created-by-text-span{
+
+  width: 100vw;
+  
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+/* identical to box height */
+text-align: center;
+
+color: #B9BDCF;
+}
+
+footer {
+	margin-top: 5vh;
+	display: flex;
+	width: 50vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .App{
+    display: inline-block;
+  }
+
+  .main-jobs-body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card{
+    width: 75vw;
+  }
+
+  .card-job{
+    width: 30vw;
+    font-size: 15px;
+  }
+
+  .card-job-info{
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+
+  .ant-pagination.css-dev-only-do-not-override-sk7ap8{
+    width: 80vw;
+    justify-content:center;
+  }
+
+  .searchinput{
+    height: 120px;
+  }
+
+  .specific-job{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .specific-job-leftside{
+    width: 85%;
+  }
+
+  footer{
+    width: 70vw;
+  }
+}
+
+
