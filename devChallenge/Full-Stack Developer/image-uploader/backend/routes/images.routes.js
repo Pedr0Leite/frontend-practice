@@ -34,6 +34,7 @@ let ImageUpload = require('../models/ImgUploader');
 
 router.post('/img-upload', upload.single('imgUploaded'), (req, res, next) => {
     const url = req.protocol + '://' + req.get('host');
+    console.log('req.file?.filename :', req.file?.filename);
     const imageUpload = new ImageUpload({
         _id: new mongoose.Types.ObjectId(),
         name: req.body.name,

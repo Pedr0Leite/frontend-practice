@@ -37,14 +37,12 @@ export function FileUploadComponent({ ...props }) {
         e.preventDefault();
         setUploading(true);
         const formData = new FormData();
-
-        var test = document.querySelector("#form");
-        console.log('test :', test);
-
         formData.append('fileName', fileName);
+        var options = { content: formData };
+        console.log('options :', options);
 
         // var options = { content: formData };
-        axios.post("http://localhost:4000/api/img-upload", formData, {
+        axios.post("http://localhost:4000/api/img-upload", options, {
             headers: { "Content-Type": "multipart/form-data"}
         }).then(res =>{
                 console.log(res);
