@@ -3,7 +3,7 @@ import { FileUploader } from "react-drag-drop-files";
 
 
 interface DragAndDropComponentProps {
-  onDrop: (files: FileList) => void;
+  onDrop: (files: File) => void;
 }
 
 export function DragAndDropComponent({onDrop, ...props }: DragAndDropComponentProps) {

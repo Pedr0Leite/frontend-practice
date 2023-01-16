@@ -4,7 +4,7 @@ let express = require('express'),
     uuidv4 = require('uuid/v4'),
     router = express.Router();
 
-const DIR = './public/';
+const DIR = '../public/';
 
 const multerStorage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -30,11 +30,13 @@ var upload = multer({
 
 //Image model
 
-let ImageUpload = require('../models/ImgUploader');
+let ImageUploader = require('../models/ImgUploader');
 
 router.post('/img-upload', upload.single('imgUploaded'), (req, res, next) => {
     const url = req.protocol + '://' + req.get('host');
-    const imageUpload = new ImageUpload({
+    console.log('req.file :', req.file);
+    console.log('req.body :', req.body);
+    const imageUpload = new ImageUploader({
         _id: new mongoose.Types.ObjectId(),
         name: req.body.name,
         imgUploaded: url + '/public/' + req.file?.filename

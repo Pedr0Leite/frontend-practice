@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, ReactNode, useState, useRef, useContext } from 'react';
+import React, { HTMLAttributes, ReactNode, useState, useRef, useContext, useEffect } from 'react';
 import { DragAndDropComponent } from '../components/DragAndDropComponent';
 import { UploadingContext } from '../context/UploadingContext';
 
@@ -6,26 +6,34 @@ import axios from 'axios';
 
 export function FileUploadComponent({ ...props }) {
     
-    const [file, setFile] = useState<FileList>();
+    const [file, setFile] = useState<File>();
     const inputRef = useRef<HTMLInputElement>(null);
     const [fileName, setFileName] = useState<string>('');
     const { uploading, setUploading } = useContext(UploadingContext);
     
     const handleFileChange = (event: any) => {
         const fileObj = event.target.files && event.target.files[0];
+        
         if (!fileObj) {
             return;
         }
-        setFile(file);
+        setFile(fileObj);
         // setUploading(true);
         event.target.value = null;
-        setFileName(fileObj.name)
+        setFileName(fileObj.name);
+
     };
     
+    useEffect(() =>{
+        console.log('fileName :', fileName);
+        console.log('file :', file);
+
+    }, [fileName, file])
     
-    const handleDrop = (files: FileList) => {
+    
+    const handleDrop = (files: File) => {
         setFile(files);
-        setFileName(files[0].name);
+        setFileName(files.name);
     };
     
     const handleClick = (e:Event) => {
@@ -38,14 +46,20 @@ export function FileUploadComponent({ ...props }) {
         setUploading(true);
         const formData = new FormData();
 
-        var test = document.querySelector("#form");
-        console.log('test :', test);
-
-        formData.append('fileName', fileName);
+        formData.append('file', fileName);
+        console.log('formData :', formData);
+        console.log('fileName :', fileName);
+        console.log('file :', file);
 
         // var options = { content: formData };
-        axios.post("http://localhost:4000/api/img-upload", formData, {
-            headers: { "Content-Type": "multipart/form-data"}
+
+        axios.post("http://localhost:4000/api/img-upload", {
+            body: file,
+            // headers: { "Content-Type": "multipart/form-data"}
+            headers: { 
+                "Content-Type": "image/jpeg",
+                "content-length": `${file?.size}`
+                }
         }).then(res =>{
                 console.log(res);
             })
