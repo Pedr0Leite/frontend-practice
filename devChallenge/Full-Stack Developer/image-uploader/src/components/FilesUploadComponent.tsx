@@ -60,6 +60,7 @@ export function FileUploadComponent({ ...props }) {
                 "Content-Type": "image/jpeg",
                 "content-length": `${file?.size}`
                 }
+
         }).then(res =>{
                 console.log(res);
             })
