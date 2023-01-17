@@ -1,6 +1,8 @@
 import React, { HTMLAttributes, ReactNode, useState, useRef, useContext, useEffect } from 'react';
-import { DragAndDropComponent } from '../components/DragAndDropComponent';
-import { UploadingContext } from '../context/UploadingContext';
+import { DragAndDropComponent } from '../../DragAndDrop/DragAndDropComponent';
+import { UploadingContext } from '../../../context/UploadingContext';
+import { ImgUploadedContext } from '../../../context/ImgUploadedContext';
+import { ImgUploadedStringContext } from '../../../context/ImgUploadedStringContext';
 
 import axios from 'axios';
 
@@ -9,7 +11,10 @@ export function FileUploadComponent({ ...props }) {
     const [file, setFile] = useState<File>();
     const inputRef = useRef<HTMLInputElement>(null);
     const [fileName, setFileName] = useState<string>('');
+
     const { uploading, setUploading } = useContext(UploadingContext);
+    const { imageCreated, setImageCreated } = useContext(ImgUploadedContext);
+    const { imageString, setImageString } = useContext(ImgUploadedStringContext);
     
     const handleFileChange = (event: any) => {
         const fileObj = event.target.files && event.target.files[0];
@@ -18,17 +23,10 @@ export function FileUploadComponent({ ...props }) {
             return;
         }
         setFile(fileObj);
-        // setUploading(true);
         event.target.value = null;
         setFileName(fileObj.name);
-
+        
     };
-    
-    useEffect(() =>{
-        console.log('fileName :', fileName);
-        console.log('file :', file);
-
-    }, [fileName, file])
     
     
     const handleDrop = (files: File) => {
@@ -44,29 +42,28 @@ export function FileUploadComponent({ ...props }) {
     const onSubmit = (e:Event) => {
         e.preventDefault();
         setUploading(true);
-        const formData = new FormData();
-
-        formData.append('file', fileName);
-        console.log('formData :', formData);
-        console.log('fileName :', fileName);
-        console.log('file :', file);
-
-        // var options = { content: formData };
-
-        axios.post("http://localhost:4000/api/img-upload", {
-            body: file,
-            // headers: { "Content-Type": "multipart/form-data"}
-            headers: { 
-                "Content-Type": "image/jpeg",
-                "content-length": `${file?.size}`
-                }
-
+        
+        if(file){
+            const formData = new FormData();
+            formData.append('filename', fileName);
+            formData.append('formFile', file);
+            
+            axios.post("http://localhost:4000/api/img-upload", formData, {
+            headers: { "Content-Type": "multipart/form-data"}
         }).then(res =>{
-                console.log(res);
+                // console.log(res);
+                setTimeout(() => {
+                    if(res.status === 201){
+                        setImageCreated(true);
+                        setImageString(res.data!.imgCreated!.imgUploaded);
+                        setUploading(false);
+                    }
+                }, 1500);
             })
-    }
+        }            
+        }
 
-    return (
+        return (
         <div className='card-div'>
             <div className='card-inside'>
                 <h2 className='card-inside-title'>Upload your image</h2>
