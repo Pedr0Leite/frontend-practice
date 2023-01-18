@@ -10,23 +10,25 @@ const [users, setUsers] = useState([]);
 
 useEffect(()=> {
     if(data){
-        setUsers(data.getAllUsers);
+        // setUsers(data.getAllUsers);
         // setUsers(data.rockets);
+        setUsers(data.allStarships.starships);
+        console.log('users :', users);
     }
-    console.log('users :', users);
 }, [data])
             
     return(
-        <div>
-{users.map((val)=> {
-    return <h1>{val.firstName}</h1>
-})}
-         </div>
+//         <div>
+// {users.map((val)=> {
+//     return <h1 key={val.id}>{val.firstName}</h1>
+// })}
+//          </div>
 //         <div>
 // {users.map((val)=> {
 //     return <h1>{val.name}</h1>
 // })}
 //         </div>
+<></>
     )
 }
 
