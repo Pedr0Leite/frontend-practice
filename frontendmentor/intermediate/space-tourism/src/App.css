@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./assets//home-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.App {
+  /* text-align: center; */
+}
+
+.navbar {
+  color: #FFF;
+  /* height: 96px; */
+  width: 95%;
+  /* background-color: rgb(99, 218, 218); */
+  display: flex;
+  overflow: hidden;
+  float: inline-end;
+  margin-top: 40px;
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+.navbar-links{
+  width: 70%;
+height: 96px;
+display: flex;
+justify-content: space-evenly;
+
+background: rgba(255, 255, 255, 0.04);
+backdrop-filter: blur(40.7742px);
+}
+
+hr{
+  transform: rotate(90deg);
+}
+
+.navbar-links a{
+  float: left;
+  display: block;
+font-family: 'Poppins', sans-serif;
+letter-spacing: 0.2em;
+font-size: 14px;
+text-align: center;
+padding: 36px 22px;
+text-decoration: none;
+align-self: center;
+}
+
+.navbar-links a:hover{
+  border-bottom: 3px solid #FFF;
+}
+
+.main-area-home-div{
+  color: #FFF;
+  height: 382px;
+  position: relative;
+  top: 387px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 0.4fr 1.3fr 1.3fr;
+  margin-bottom: 131px;
+}
+
+.main-area-info{
+  
+}
+
+.main-area-btn{
+  /* border-radius: 100px; */
+  /* background-color: #FFF; */
+  color: black;
+  text-align: center;
+}
+
+.main-area-btn button{
+  border-radius: 100px;
+  background-color: #FFF;
+  color: black;
+  text-align: center;
+}
