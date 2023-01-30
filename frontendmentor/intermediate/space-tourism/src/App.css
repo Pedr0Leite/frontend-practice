@@ -54,6 +54,7 @@ text-align: center;
 padding: 36px 22px;
 text-decoration: none;
 align-self: center;
+cursor: pointer;
 }
 
 .navbar-links a:hover{
@@ -67,7 +68,7 @@ align-self: center;
   top: 387px;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 0.4fr 1.3fr 1.3fr;
   margin-bottom: 131px;
 }
