@@ -1,32 +1,34 @@
-import React from 'react';
+import {useState} from 'react';
 import './App.css';
-import logo from "./assets/logo.svg";
+import mainLogo from "./assets/logo.svg";
+
+import {Link, Route, Routes} from "react-router-dom";
+import { Main } from "./pages/main";
+import { Destination } from "./pages/destination";
+import { Crew } from "./pages/crew";
+import { Technology } from "./pages/technology";
 
 function App() {
   return (
     <div className="App">
       <nav className="navbar">
-        <img alt="logo" src={logo}/>
+        <img alt="logo" src={mainLogo}/>
         <hr/>
-          <div className="navbar-links">
-          <a><b>00</b> HOME</a>
-          <a><b>01</b> DESTINATION</a>
-          <a><b>02</b> CREW</a>
-          <a><b>03</b> TECHNOLOGY</a>
-          </div>
+          <nav className="navbar-links">
+          <ul>
+          <li><Link to="/"><b>00</b> HOME</Link></li>
+          <li><Link to="/destination"><b>01</b> DESTINATION</Link></li>
+          <li><Link to="/crew"><b>02</b> CREW</Link></li>
+          <li><Link to="/tech"><b>03</b> TECHNOLOGY</Link></li>
+          </ul>
+          </nav>
       </nav>
-      <div className="main-area-home-div">
-    <div className="main-area-info">
-      {/* <h3>SO, YOU WANT TO TRAVEL TO</h3>
-      <h1>SPACE</h1>
-      <span>Let’s face it; if you want to go to space,
-        you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, 
-        and relax because we’ll give you a truly out of this world experience!</span> */}
-    </div>
-    <div className="main-area-btn">
-      {/* <button>Explore</button> */}
-    </div>
-      </div>
+      <Routes>
+      <Route path="/" element={<Main/>} />
+      <Route path="/destination" element={<Destination/>} />
+      <Route path="/crew" element={<Crew/>} />
+      <Route path="/tech" element={<Technology/>} />
+      </Routes>
     </div>
   );
 }
