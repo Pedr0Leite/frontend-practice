@@ -61,6 +61,7 @@ hr {
   padding: 36px 22px;
   text-decoration: none;
   align-self: center;
+
 }
 
 .navbar-links a:hover {
@@ -77,6 +78,7 @@ hr {
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   grid-template-rows: 34px 172px 128px;
   /* grid-column-gap: 100px; */
   padding: 0 50px 0 150px;
@@ -97,6 +99,7 @@ hr {
   letter-spacing: 4px;
 
   color: #d0d6f9;
+
 }
 
 .main-area-title {
