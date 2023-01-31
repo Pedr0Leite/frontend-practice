@@ -2,6 +2,21 @@ import React from 'react';
 
 export const Technology = () => {
     return(
-        <div>TECHNOLOGY</div>
+        <div className="main-area-home-div">
+        <div className="main-are-subtitle">
+          TECNOLOGY
+        </div>
+        <div className="main-area-title">
+        SPACE
+        </div>
+        <div className="main-area-text">
+        Let’s face it; if you want to go to space,
+        you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, 
+      and relax because we’ll give you a truly out of this world experience!
+      </div>
+      <div className="main-area-btn">
+        <button>Explore</button>
+      </div>
+        </div>
     )
 }
