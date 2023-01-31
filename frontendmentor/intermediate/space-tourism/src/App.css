@@ -4,7 +4,6 @@
 }
 
 body {
-  background-image: url("./assets//home-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -12,6 +11,10 @@ body {
 }
 
 .App {
+  /* background-image: url("./assets/home-background.jpg"); */
+  background-image: url("./assets/destination-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   /* text-align: center; */
   height: 100vh;
 }
@@ -28,8 +31,6 @@ body {
 }
 
 .navbar ul {
-  list-style-type: none;
-  display: flex;
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
@@ -108,7 +109,7 @@ hr {
   font-weight: 400;
   font-size: 150px;
   line-height: 172px;
-  
+
   grid-column: 1;
   grid-row: 2;
   color: #ffffff;
@@ -152,3 +153,147 @@ hr {
 }
 
 /* destination */
+
+.destination-main-div {
+  color: #fff;
+  height: 382px;
+  position: relative;
+  top: 175px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 34px 100px 128px 100px 100px;
+  grid-column-gap: 100px;
+  padding: 0 50px 0 150px;
+}
+
+.destination-subtitle {
+  grid-column: 1;
+  grid-row: 1;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.destination-subtitle span {
+  opacity: 25%;
+}
+
+.destination-img {
+  grid-column: 1;
+  grid-row: span 4;
+  margin: 50px auto;
+}
+
+.destination-area-btn {
+  float: left;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  align-self: start;
+  grid-row: 2;
+  grid-column: 2;
+  width: 65%;
+}
+
+.destination-planet-btn {
+  padding: 12px 0px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  text-align: center;
+  background: none;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+}
+
+.destination-planet-btn:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.destination-title {
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  color: #FFFFFF;
+}
+
+.destination-info {
+  grid-column: 2;
+  grid-row: 4;
+  width: 65%;
+}
+
+.destination-sub-info {
+  grid-column: 2;
+  grid-row: 5;
+  display: flex;
+  justify-content: start;
+  align-self: start;
+
+  font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+color: #D0D6F9;
+margin-top: 55px;
+
+}
+
+.destination-sub-info-left {
+  padding-right: 25%;
+
+  font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 32px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.destination-sub-info-left h4 {
+  font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 2.3625px;
+text-transform: uppercase;
+color: #D0D6F9;
+}
+
+.destination-sub-info-right {
+  font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 32px;
+
+/* identical to box height */
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.destination-sub-info-right h4{
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #D0D6F9;
+
+}
