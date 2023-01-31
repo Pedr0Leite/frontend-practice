@@ -1,8 +1,12 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
+import { DataContext } from '../context/DataContext';
 import moonImg from "./../assets/moon.png"
 
 export const Destination = () => {
+
+  const { data, setData } = useContext(DataContext);
+
+
     return(
         <div className="destination-main-div">
             <div className="destination-img"><img alt="moon" src={moonImg}></img></div>
