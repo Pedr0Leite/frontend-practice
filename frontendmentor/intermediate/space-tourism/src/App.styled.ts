@@ -10,7 +10,7 @@ interface AppDivProp {
 }
 
 export const AppDiv = styled.div<AppDivProp>`
-  background-image: url('${props => {
+  background-image: url('${(props: { bgImg: string; }) => {
     
     if(props.bgImg === 'main'){
       return homeBG;
