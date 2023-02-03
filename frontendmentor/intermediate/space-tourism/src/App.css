@@ -10,14 +10,12 @@ body {
   height: 100%;
 }
 
-.App {
-  /* background-image: url("./assets/home-background.jpg"); */
+/* .App {
   background-image: url("./assets/destination-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* text-align: center; */
   height: 100vh;
-}
+} */
 
 .navbar {
   color: #fff;
@@ -75,7 +73,7 @@ hr {
   color: #fff;
   height: 382px;
   position: relative;
-  top: 380px;
+  top: 25%;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -155,16 +153,16 @@ hr {
 /* destination */
 
 .destination-main-div {
-  color: #fff;
-  height: 382px;
-  position: relative;
-  top: 175px;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 34px 100px 128px 100px 100px;
-  grid-column-gap: 100px;
-  padding: 0 50px 0 150px;
+	color: #fff;
+	height: 382px;
+	position: relative;
+	top: 10%;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 0px 50px 128px 100px 100px;
+	grid-column-gap: 100px;
+	padding: 0 50px 0 150px;
 }
 
 .destination-subtitle {
@@ -215,6 +213,14 @@ hr {
 }
 
 .destination-planet-btn:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.destination-planet-btn:focus{
+  border-bottom: 3px solid #fff;
+}
+
+.destination-active-btn {
   border-bottom: 3px solid #fff;
 }
 
@@ -306,8 +312,8 @@ color: #FFFFFF;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 35px 170px 50px 135px 200px;
-    grid-column-gap: 100px;
+    grid-template-rows: 35px 50px 50px 135px auto;
+    /* grid-column-gap: 200px; */
     padding: 0 50px 0 150px;
 }
 
@@ -330,8 +336,11 @@ color: #FFFFFF;
   grid-row: span 6;
 }
 .crew-img img{
-  max-width: fit-content;
-  max-height: fit-content;
+    max-width: -moz-fit-content;
+    width: 400px;
+    max-height: -moz-fit-content;
+    height: 500px;
+    margin-left: 125px;
 }
 
 .crew-subtitle span {

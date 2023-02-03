@@ -1,24 +1,17 @@
 import React, { useContext, useEffect } from 'react';
-import { DataContext } from '../context/DataContext';
-import {CurrentDestinationContext, CurrentDestinationProvider } from "../context/CurrentDestinationContext";
+import {CurrentDestinationContext, CurrentDestinationProvider } from "../../context/CurrentDestinationContext";
 import moonImg from "./../assets/moon.png"
-import { DestinationPlanetButton } from "../components/DestinationPage/DestinationPlanetButton";
-import { DestinationMaindiv } from '../components/DestinationPage/DestinationMaindiv';
+import { DestinationPlanetButton } from "../../components/DestinationPage/DestinationPlanetButton";
+import { DestinationImg } from './DestinationImg/DestinationImg';
 
-export const Destination = () => {
+export const DestinationMaindiv = () => {
   
-  const { data, setData } = useContext(DataContext);
   const { destinationData, setDestinationData } = useContext(CurrentDestinationContext);
-  
-  useEffect(() => {
-    console.log('destinationData :', destinationData);
-    
-  }, [destinationData])
 
     return(
-      <CurrentDestinationProvider>
-        {/* <div className="destination-main-div">
-            <div className="destination-img"><img alt="moon" src={destinationData.img}></img></div>
+        <div className="destination-main-div">
+            {/* <div className="destination-img"><img alt={destinationData.name} src={destinationData.img}></img></div> */}
+            <DestinationImg></DestinationImg>
         <div className="destination-subtitle">
           <span>01</span> PICK YOUR DESTINATION
         </div>
@@ -26,7 +19,7 @@ export const Destination = () => {
         <DestinationPlanetButton/>
       </div>
         <div className="destination-title">
-          {destinationData.name}
+          {destinationData.name.toLocaleUpperCase()}
         </div>
         <div className="destination-info">
         {destinationData.details}
@@ -41,8 +34,6 @@ export const Destination = () => {
             {destinationData.est_travel_time}
             </div>
         </div>
-        </div> */}
-        <DestinationMaindiv></DestinationMaindiv>
-      </CurrentDestinationProvider>
+        </div>
     )
 }
