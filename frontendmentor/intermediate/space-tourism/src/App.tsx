@@ -42,7 +42,7 @@ function App() {
           </nav>
         </nav>
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" index element={<Main />} />
           <Route path="/destination" element={<Destination />} />
           <Route path="/crew" element={<Crew />} />
           <Route path="/tech" element={<Technology />} />
