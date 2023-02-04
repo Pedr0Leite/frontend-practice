@@ -11,31 +11,15 @@ const useSetDestinationActiveButton = () => {
   const {setItemToStorage, getItemFromStorage} = usePersistentStorage();  
   
   useEffect(() => {
-    if (selectedBtn === 0) {
-      document.getElementById("destination-btn-0")!.classList.add("destination-active-btn");
-      document.getElementById("destination-btn-1")!.classList.remove("destination-active-btn");
-      document.getElementById("destination-btn-2")!.classList.remove("destination-active-btn");
-      document.getElementById("destination-btn-3")!.classList.remove("destination-active-btn");
-      
-    } else if (selectedBtn === 1) {
-      document.getElementById("destination-btn-0")!.classList.remove("destination-active-btn");
-      document.getElementById("destination-btn-1")!.classList.add("destination-active-btn");
-      document.getElementById("destination-btn-2")!.classList.remove("destination-active-btn");
-      document.getElementById("destination-btn-3")!.classList.remove("destination-active-btn");
-      
-    } else if (selectedBtn === 2) {
-      document.getElementById("destination-btn-0")!.classList.remove("destination-active-btn");
-      document.getElementById("destination-btn-1")!.classList.remove("destination-active-btn");
-      document.getElementById("destination-btn-2")!.classList.add("destination-active-btn");
-      document.getElementById("destination-btn-3")!.classList.remove("destination-active-btn");
-      
-    } else {
-      document.getElementById("destination-btn-0")!.classList.remove("destination-active-btn");
-      document.getElementById("destination-btn-1")!.classList.remove("destination-active-btn");
-      document.getElementById("destination-btn-2")!.classList.remove("destination-active-btn");
-      document.getElementById("destination-btn-3")!.classList.add("destination-active-btn");
-      
-    }
+    const buttons = document.getElementsByClassName("destination-planet-btn");
+
+    Array.prototype.forEach.call(buttons, (btn) => {
+      if (!btn.id.includes(selectedBtn)) {
+        btn.classList.remove("destination-active-btn");
+      } else {
+        btn.classList.add("destination-active-btn");
+      }
+    });
 
     setDestData(selectedBtn);
     

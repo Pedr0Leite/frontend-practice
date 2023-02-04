@@ -1,6 +1,5 @@
-import React, { useContext, useEffect } from 'react';
-import {CurrentDestinationContext, CurrentDestinationProvider } from "../../context/CurrentDestinationContext";
-import moonImg from "./../assets/moon.png"
+import { useContext } from 'react';
+import {CurrentDestinationContext } from "../../context/CurrentDestinationContext";
 import { DestinationPlanetButton } from "../../components/DestinationPage/DestinationPlanetButton";
 import { DestinationImg } from './DestinationImg/DestinationImg';
 
@@ -10,8 +9,7 @@ export const DestinationMaindiv = () => {
 
     return(
         <div className="destination-main-div">
-            {/* <div className="destination-img"><img alt={destinationData.name} src={destinationData.img}></img></div> */}
-            <DestinationImg></DestinationImg>
+            <DestinationImg/>
         <div className="destination-subtitle">
           <span>01</span> PICK YOUR DESTINATION
         </div>
