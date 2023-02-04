@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, ReactNode } from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
 
 interface CrewMainDivPropsInterface extends HTMLAttributes<HTMLDivElement> {
     children: ReactNode;

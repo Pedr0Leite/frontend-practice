@@ -1,22 +1,50 @@
-import { useState } from "react";
+import { useEffect, useReducer, useState } from "react";
 import "./App.css";
 import mainLogo from "./assets/logo.svg";
 import * as Styled from "./App.styled";
 
 import { DataProvider } from "../src/context/DataContext";
+import { reducerBG } from '../src/hooks/reducer/ReducerAction';
 
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useLocation, useParams } from "react-router-dom";
 import { Main } from "./pages/main";
 import { Destination } from "./pages/destination";
 import { Crew } from "./pages/crew";
 import { Technology } from "./pages/technology";
+import { REDUCER_MAIN_BG } from "./models/reducer.model";
+
+import homeBG from "./assets/home-background.jpg";
+
 
 function App() {
-  //reducer or custom hook here to change variable
+  const location = useLocation();
   const [bgImage, setBGImage] = useState("main");
+  const [bgPathName, bgPathNameDispatch] = useReducer(reducerBG, homeBG);
+  // let { params } = useParams();
+  
+  useEffect(() => {
+    const locationPathName = location.pathname.replace('\/', '');
+    switch(locationPathName){
+      case "":
+        bgPathNameDispatch({type: REDUCER_MAIN_BG.HOME_BG});
+      break;
+      case "destination":
+        bgPathNameDispatch({type: REDUCER_MAIN_BG.DESTINATION_BG});
+      break;
+      case "crew":
+        bgPathNameDispatch({type: REDUCER_MAIN_BG.CREW_BG});
+      break;
+      case "tech":
+        bgPathNameDispatch({type: REDUCER_MAIN_BG.TECH_BG});
+      break;
+    }
+    
+  }, [location])
+
+
   return (
     <DataProvider>
-      <Styled.AppDiv bgImg={bgImage}>
+      <Styled.AppDiv bgImg={bgPathName}>
         <nav className="navbar">
           <img alt="logo" src={mainLogo} />
           <hr />

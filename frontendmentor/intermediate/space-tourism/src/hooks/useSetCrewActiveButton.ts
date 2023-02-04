@@ -48,27 +48,17 @@ const useSetCrewActiveButton = () => {
 
 
   useEffect(() => {
-    if (selectedBtn === 0) {
-      document.getElementById("btn-0")!.classList.add("active-btn");
-      document.getElementById("btn-1")!.classList.remove("active-btn");
-      document.getElementById("btn-2")!.classList.remove("active-btn");
-      document.getElementById("btn-3")!.classList.remove("active-btn");
-    } else if (selectedBtn === 1) {
-      document.getElementById("btn-0")!.classList.remove("active-btn");
-      document.getElementById("btn-1")!.classList.add("active-btn");
-      document.getElementById("btn-2")!.classList.remove("active-btn");
-      document.getElementById("btn-3")!.classList.remove("active-btn");
-    } else if (selectedBtn === 2) {
-      document.getElementById("btn-0")!.classList.remove("active-btn");
-      document.getElementById("btn-1")!.classList.remove("active-btn");
-      document.getElementById("btn-2")!.classList.add("active-btn");
-      document.getElementById("btn-3")!.classList.remove("active-btn");
-    } else {
-      document.getElementById("btn-0")!.classList.remove("active-btn");
-      document.getElementById("btn-1")!.classList.remove("active-btn");
-      document.getElementById("btn-2")!.classList.remove("active-btn");
-      document.getElementById("btn-3")!.classList.add("active-btn");
-    }
+
+    const buttons = document.getElementsByClassName("crew-btn");
+
+    Array.prototype.forEach.call(buttons, (btn) => {
+      if (!btn.id.includes(selectedBtn)) {
+        btn.classList.remove("active-btn");
+      } else {
+        btn.classList.add("active-btn");
+      }
+    });
+
   }, [selectedBtn]);
 
   const onBtnClick = (value: number) => {

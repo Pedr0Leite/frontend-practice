@@ -1,30 +1,17 @@
 import styled from 'styled-components';
 
-import homeBG from "./assets/home-background.jpg";
-import destinationBG from "./assets/destination-background.jpg";
-import crewBG from "./assets/crew-background.png";
-import techBG from "./assets/tech-background.jpg";
-
 interface AppDivProp {
     bgImg: string;
 }
 
 export const AppDiv = styled.div<AppDivProp>`
-  background-image: url('${(props: { bgImg: string; }) => {
-    
-    if(props.bgImg === 'main'){
-      return homeBG;
-  }else if(props.bgImg === 'dest'){
-      return destinationBG;
-  }else if(props.bgImg === 'crew'){
-        return crewBG;
-  }else if(props.bgImg === 'tech'){
-        return techBG;
-    }else{
-        return homeBG;
-    }
-  }}');
-background-repeat: no-repeat;
+background-image: url('${(props => props.bgImg)}');
 background-size: cover;
-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 `
