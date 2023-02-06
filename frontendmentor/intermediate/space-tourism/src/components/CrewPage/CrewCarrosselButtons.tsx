@@ -9,7 +9,7 @@ interface CrewPageInfoPropsInterface {
 
 // export const CrewCarrosselButtons = ({role, name, details,...props} : CrewPageInfoPropsInterface) => {
 export const CrewCarrosselButtons = ({...props}) => {
-    const {selectedBtn, onBtnClick} = useSetCrewActiveButton();
+    const {onBtnClick} = useSetCrewActiveButton();
 
     return(
     <div className="crew-main-btn">
