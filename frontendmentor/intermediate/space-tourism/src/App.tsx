@@ -13,13 +13,10 @@ import { Crew } from "./pages/crew";
 import { Technology } from "./pages/technology";
 import { REDUCER_MAIN_BG } from "./models/reducer.model";
 
-import homeBG from "./assets/home-background.jpg";
-
-
 function App() {
   const location = useLocation();
   const [bgImage, setBGImage] = useState("main");
-  const [bgPathName, bgPathNameDispatch] = useReducer(reducerBG, homeBG);
+  const [bgPathName, bgPathNameDispatch] = useReducer(reducerBG, "");
   // let { params } = useParams();
   
   useEffect(() => {
