@@ -51,7 +51,7 @@ export const navBarLI = styled.li`
   align-items: center;
   column-gap: 20px;
 
-  &:hover {
+  &:not(:first-child):hover {
     border-bottom: 3px solid orange;
   }
 
@@ -79,14 +79,22 @@ export const navBarLI = styled.li`
 
 `;
 
+// interface AvatarProps {
+//   url?: string;
+// }
+
 export const navBarUserLogo = styled.div`
 border: 1px solid #FF7D1A;
-width: 40px;
-height: 40px;
-background: url(image-avatar.png);
+width: 50px;
+height: 50px;
 border: 1px solid #FF7D1A;
 border-radius: 117px;
 flex: none;
 order: 1;
 flex-grow: 0;
+
+& img {
+  height: 100%;
+  width: 100%;
+}
 `;

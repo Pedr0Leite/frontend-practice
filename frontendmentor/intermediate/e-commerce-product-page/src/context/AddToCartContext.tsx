@@ -5,9 +5,16 @@ interface AddToCartProviderProps {
   children: ReactNode;
 }
 
+export interface CartProductProps {
+  name?:string,
+  thumbnail?: string,
+  qnty?: number,
+  value?: number
+}
+
 interface AddToCartInterface {
-  AddToCart: object;
-  setAddToCart: (AddToCart: object) => void;
+  AddToCart: CartProductProps;
+  setAddToCart: (AddToCart: CartProductProps) => void;
 }
 
 export const AddToCartContext = React.createContext<AddToCartInterface>({

@@ -1,15 +1,17 @@
-import * as React from 'react';
-import * as Styled from './Navbar.styled';
-import { motion, AnimatePresence } from 'framer-motion';
+import * as React from "react";
+import * as Styled from "./Navbar.styled";
+import { motion, AnimatePresence } from "framer-motion";
+import CartModal from "../Modal/CartModal";
 
-import shoppingCart from '../assets/icons/icon-cart.svg';
-import CartModal from './CartModal';
-import { useState } from 'react';
-import useShowModal from '../hooks/useShowModal';
+import { useContext, useState } from "react";
+import useShowModal from "../../hooks/useShowModal";
+import shoppingCart from "../../assets/icons/icon-cart.svg";
+import avatarLogo from "../../assets/images/image-avatar.png";
+import { AddToCartContext } from "../../context/AddToCartContext";
 
 export default function Navbar() {
-  const [showModal, setShowModal] = useState(false);
   const { modalShow, toggleModal } = useShowModal();
+  const { AddToCart, setAddToCart } = useContext(AddToCartContext);
 
   return (
     <div>
@@ -52,8 +54,17 @@ export default function Navbar() {
           <Styled.navBarLI>Contact</Styled.navBarLI>
         </Styled.navBarUL>
         <div className="logos">
-          <img onClick={toggleModal} className="svg-cart" src={shoppingCart} />
-          <Styled.navBarUserLogo />
+          <div className="logos-cart-img-div">
+            <img
+              onClick={toggleModal}
+              className="svg-cart"
+              src={shoppingCart}
+            />
+            {(AddToCart.qnty != undefined && AddToCart.qnty > 0) ? <div className="logos-cart-qnty">{AddToCart.qnty}</div> : <></>}
+          </div>
+          <Styled.navBarUserLogo>
+            <img src={avatarLogo} />
+          </Styled.navBarUserLogo>
         </div>
       </Styled.navBar>
       <AnimatePresence initial={false}>

@@ -1,14 +1,17 @@
-import * as React from 'react';
-import MainDiv from './components/MainDiv';
-import Navbar from './components/Navbar';
-import { AddToCartProvider } from './context/AddToCartContext';
-import './style.css';
+import * as React from "react";
+import MainDiv from "./components/Main/MainDiv";
+import Navbar from "./components/NavBar/Navbar";
+import { AddToCartProvider } from "./context/AddToCartContext";
+import "./App.css";
+import { ProductImgProvider } from "./context/ProductImgContext";
 
 export default function App() {
   return (
     <AddToCartProvider>
-      <Navbar />
-      <MainDiv />
+      <ProductImgProvider>
+        <Navbar />
+        <MainDiv />
+      </ProductImgProvider>
     </AddToCartProvider>
   );
 }
