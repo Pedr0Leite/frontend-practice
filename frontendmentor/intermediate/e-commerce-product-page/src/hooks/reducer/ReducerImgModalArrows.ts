@@ -13,26 +13,25 @@ type IndexStateActionType = {
 type IndexStateType = number;
 
 export function ReducerImgModalArrows(
-  indexState: IndexStateType | 0,
+  indexState: IndexStateType,
   action: IndexStateActionType
 ) {
-  return indexState;
-  // switch (action.type) {
-  //   case REDUCER_ACTION.INITIAL:
-  //     indexState = 0;
-  //     return indexState;
-  //   case REDUCER_ACTION.INCREASE:
-  //     if (indexState < 3) {
-  //       indexState++;
-  //     }
-  //     return indexState;
-  //   case REDUCER_ACTION.DECREASE:
-  //     if (indexState > 0) {
-  //       indexState--;
-  //     }
-  //     return indexState;
-  //   case REDUCER_ACTION.SPECIFIC:
-  //   indexState = action.payload;
-  //   return indexState;
-  // }
+  switch (action.type) {
+    case REDUCER_ACTION.INITIAL:
+      indexState = 0;
+      return indexState;
+    case REDUCER_ACTION.INCREASE:
+      if (indexState < 3) {
+        indexState++;
+      }
+      return indexState;
+    case REDUCER_ACTION.DECREASE:
+      if (indexState > 0) {
+        indexState--;
+      }
+      return indexState;
+    case REDUCER_ACTION.SPECIFIC:
+      indexState = action.payload as number;
+      return indexState;
+  }
 }
